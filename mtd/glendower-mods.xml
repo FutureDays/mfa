@@ -1,0 +1,33 @@
+<mods xmlns="http://www.loc.gov/mods/v3" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink">
+<titleInfo>
+<title>fb</title>
+<subTitle>fb</subTitle>
+</titleInfo>
+<name>
+<namePart>fb</namePart>
+<role>
+<roleTerm authority="marcrelator" type="text">trc</roleTerm>
+</role>
+</name>
+<note type="reconstructor">fb</note>
+<originInfo>
+<dateCreated>fb</dateCreated>
+<publisher>fb</publisher>
+</originInfo>
+<identifier type="sn">fb</identifier>
+<identifier type="pn">fb</identifier>
+<note type="instrumentation">fb</note>
+<note type="performancehist">fb</note>
+<note type="generalNote">fb</note>
+<genre>fb</genre>
+<tableOfContents type="scoreFolderContents">fb</tableOfContents>
+<note type="ensemble">combo</note>
+<note type="collection">fb</note>
+<language>
+<languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+</language>
+<location>
+<physicalLocation>fb</physicalLocation>
+</location>
+<accessCondition>fb</accessCondition>
+</mods>

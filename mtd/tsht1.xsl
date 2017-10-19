@@ -12,7 +12,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	<!--<xsl:for-each select="FMPDSORESULT/ROW">-->
 		<!--<xsl:copy>-->
 		<name>
-			<namePart><xsl:value-of select="/Arranger"/></namePart>
+			<namePart><xsl:value-of select="ROW/Arranger"/></namePart>
 			<role>
 				<roleTerm authority="marcrelator" type="text">arr</roleTerm>	
 			</role>

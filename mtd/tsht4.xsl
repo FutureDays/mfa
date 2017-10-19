@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0"
-xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+xmlns="http://www.loc.gov/mods/v3" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink">
 	<xsl:output method="xml" indent="yes"/>
 	<xsl:strip-space elements="*"/>
 	<xsl:template match="node() | @*">

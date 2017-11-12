@@ -1,0 +1,500 @@
+./2011/December/1219mfbc.MP3	20111219	Michael Feinstein and Barbara Cook
+./2011/December/1223mfbc.MP3	20111223	Michael Feinstein and Barbara Cook
+./2011/December/1224mfbc.MP3	20111224	Michael Feinstein and Barbara Cook
+./2011/December/1225mfbc.MP3	20111225	Michael Feinstein and Barbara Cook
+./2011/December/1226mfliza.MP3	20111226	Michael Feinstein and Barbara Cook
+./2011/December/1227mfbc.MP3	20111227	Michael Feinstein and Barbara Cook
+./2011/December/1228bnewman.MP3	20111228
+./2011/December/1228mfbc.MP3	20111228	Michael Feinstein and Barbara Cook
+./2011/December/1229bdwyhootenanny.MP3	20111229	broadway hoot e nanny
+./2011/December/1229mfbc.MP3	20111229	Michael Feinstein and Barbara Cook
+./2011/December/1230mfcook2.MP3	20111230	Michael Feinstein and Barbara Cook
+./2011/December/1231NYE1.MP3	20111231	Michael Feinstein
+./2011/December/1231NYE2.MP3	20111231	Michael Feinstein
+./2012/April/0402Jazz1.MP3	402	Sherrie Maricle and Tomoko Ohno and Noriko Ueda
+./2012/April/0402Jazz2.MP3	402	Sherrie Maricle and Tomoko Ohno and Noriko Ueda
+./2012/April/0402Jazz3.MP3	402	Sherrie Maricle and Tomoko Ohno and Noriko Ueda
+./2012/April/0403amrafayewright.MP3	403	Amra-Faye Wright
+./2012/April/0404carolinejones.MP3	404	Caroline Jones
+./2012/April/0405amrafayewright.MP3	405	Amra-Faye Wright
+./2012/April/0405broadwayballyhoo.MP3	405	broadwayballyhoo
+./2012/April/0407heddalettuce.MP3	407	heddalettuce
+./2012/April/0409lilianemontevechi.MP3	409	Liliane Montevechi
+./2012/April/0410barbaracook.MP3	410	Barbara Cook
+./2012/April/0411barbaracook.MP3	411	Barbara Cook
+./2012/April/0411johnmalino.MP3	411	John Malino
+./2012/April/0412barbaracook.MP3	412	Barbara Cook
+./2012/April/0412broadwayballyhoo.MP3	412	broadwayballyhoo
+./2012/April/0413barbaracook-late.MP3	413	Barbara Cook
+./2012/April/0413barbaracook.MP3	413	Barbara Cook
+./2012/April/0414barbaracook-late.MP3	414	Barbara Cook
+./2012/April/0414barbaracook.MP3	414	Barbara Cook
+./2012/April/0415DooWop Rock Talk 2.MP3	415	DooWop Rock Talk
+./2012/April/0415DooWop Rock Talk.MP3	415	DooWop Rock Talk
+./2012/April/0416Melissa Klausner.MP3	416	Melissa Klausner
+./2012/April/0416PeterMintun.MP3	416	Peter Mintun
+./2012/April/0417barbaracook.MP3	417	Barbara Cook
+./2012/April/0418barbaracook.MP3	418	Barbara Cook
+./2012/April/0418Michaelfredo.MP3	418	Michael Fredo
+./2012/April/0419barbaracook.MP3	419	Barbara Cook
+./2012/April/0419broadwayballyhoo.MP3	419	broadwayballyhoo
+./2012/April/0420barbaracook-late.MP3	420	Barbara Cook
+./2012/April/0420barbaracook.MP3	420	Barbara Cook
+./2012/April/0421barbaracook-late.MP3	421	Barbara Cook
+./2012/April/0421barbaracook.MP3	421	Barbara Cook
+./2012/April/0422Sessoms.MP3	422
+./2012/April/0423johnmalino.MP3	423	John Malino
+./2012/April/0424marilynmaye.MP3	424	Marilyn Maye
+./2012/April/0425marilynmaye.MP3	425	Marilyn Maye
+./2012/April/0426broadwayballyhoo.MP3	426	broadwayballyhoo
+./2012/April/0426marilynmaye.MP3	426	Marilyn Maye
+./2012/April/0428marilynmaye-late.MP3	428	Marilyn Maye
+./2012/April/0428marilynmaye.MP3	428	Marilyn Maye
+./2012/April/0429part1.MP3	429
+./2012/April/0429part2.MP3	429
+./2012/April/0429part1.MP3	429
+./2012/April/0429part2.MP3	429
+./2012/April/0430katetaylor.MP3	430	Kate Taylor
+./2012/April/0430katetaylor.MP3	430	Kate Taylor
+./2012/August/0801kilgoreharryallen.MP3	801	Rebecca Kilgore and Harry Allen Quartet
+./2012/August/0802broadwayballyhoo.MP3	802	broadwayballyhoo
+./2012/August/0802kilgoreharryallen.MP3	802	Rebecca Kilgore and Harry Allen Quartet
+./2012/August/0803kilgoreharryallen.MP3	803	Rebecca Kilgore and Harry Allen Quartet
+./2012/August/0804kilgoreallen.MP3	804	Rebecca Kilgore and Harry Allen Quartet
+./2012/August/0805fazio.MP3	805
+./2012/August/0807kilgoreharryallen.MP3	807	Rebecca Kilgore and Harry Allen Quartet
+./2012/August/0808kilgoreallenIPES.MP3	808	Rebecca Kilgore and Harry Allen Quartet
+./2012/August/0809broadwayballyhoo.MP3	809	broadwayballyhoo
+./2012/August/0809kilgoreallen.MP3	809	Rebecca Kilgore and Harry Allen Quartet
+./2012/August/0810kilgoreallen.MP3	810	Rebecca Kilgore and Harry Allen Quartet
+./2012/August/0811kilgoreallen.MP3	811	Rebecca Kilgore and Harry Allen Quartet
+./2012/August/0813maglio.MP3	813	John Malino
+./2012/August/0814deanamartin.MP3	814	Deana Martin
+./2012/August/0815deanamartin.MP3	815	Deana Martin
+./2012/August/0816broadwayballyhoo.MP3	816	broadwayballyhoo
+./2012/August/0816deanamartin.MP3	816	Deana Martin
+./2012/August/0817deanamartin.MP3	817	Deana Martin
+./2012/August/0818deanamartin.MP3	818	Deana Martin
+./2012/August/0821raissakatone.MP3	821	Raissa Katona Bennett
+./2012/August/0822raissakatoneA.MP3	822	Raissa Katona Bennett
+./2012/August/0822raissakatoneB.MP3	822	Raissa Katona Bennett
+./2012/August/0823broadwayballyhoo.MP3	823	broadwayballyhoo
+./2012/August/0823raissakatone.MP3	823	Raissa Katona Bennett
+./2012/August/0824raissakatone.MP3	824	Raissa Katona Bennett
+./2012/August/0825raissakatone.MP3	825	Raissa Katona Bennett
+./2012/August/0826lovesongs.MP3	826	Steven Cagan
+./2012/August/0827lovesongs.MP3	827	Steven Cagan
+./2012/August/0828lovesongs.MP3	828	Steven Cagan
+./2012/August/0829lovesongs.MP3	829	Steven Cagan
+./2012/August/0830balyhoo.MP3	830	broadwayballyhoo
+./2012/August/0830lovesongs.MP3	830	Steven Cagan
+./2012/December/1201mf-late.MP3	1201	Michael Feinstein
+./2012/December/1201mf.MP3	1201	Michael Feinstein
+./2012/December/1202jazz1.MP3	1202	"Sherrie Maricle,Tomoko Ohno,Noriko Ueda"
+./2012/December/1202jazz2.MP3	1202	"Sherrie Maricle,Tomoko Ohno,Noriko Ueda"
+./2012/December/1202toliverreid.MP3	1202	T. Oliver Reid
+./2012/December/1203toliverreid.MP3	1203	T. Oliver Reid
+./2012/December/1204mf.MP3	1204	Michael Feinstein
+./2012/December/1205joannastrand.MP3	1205	Joanna Strand
+./2012/December/1205mf.MP3	1205	Michael Feinstein
+./2012/December/1206ballyhoo-11oclock.MP3	1206	broadwayballyhoo
+./2012/December/1206mf.MP3	1206	Michael Feinstein
+./2012/December/1207mf rec1.MP3	1207	Michael Feinstein
+./2012/December/1207mf rec2.MP3	1207	Michael Feinstein
+./2012/December/1207mf rec3.MP3	1207	Michael Feinstein
+./2012/December/1207mf rec4.MP3	1207	Michael Feinstein
+./2012/December/1207mf rec5.MP3	1207	Michael Feinstein
+./2012/December/1207mf rec6.MP3	1207	Michael Feinstein
+./2012/December/1207mf-late.MP3	1207	Michael Feinstein
+./2012/December/1207mf.MP3	1207	Michael Feinstein
+./2012/December/1208mf-late.MP3	1208	Michael Feinstein
+./2012/December/1208mf.MP3	1208	Michael Feinstein
+./2012/December/1209mygiftofthanks.MP3	1209	my gift of thanks
+./2012/December/1209toliverreid.MP3	1209	T Oliver Reid
+./2012/December/1211mf.MP3	1211	Michael Feinstein
+./2012/December/1212mf.MP3	1212	Michael Feinstein
+./2012/December/1213ballyhoo.MP3	1213	broadwayballyhoo
+./2012/December/1213mf.MP3	1213	Michael Feinstein
+./2012/December/1214mf-late.MP3	1214	Michael Feinstein
+./2012/December/1214mf.MP3	1214	Michael Feinstein
+./2012/December/1215MFerarly.MP3	1215	Michael Feinstein
+./2012/December/1215MFlate.MP3	1215	Michael Feinstein
+./2012/December/1216carolinejones.MP3	1216	Caroline Jones
+./2012/December/1218mf-ce-reh1.MP3	1218	Michael Feinstein and Christine Ebersole
+./2012/December/1218mf-ce-reh2.MP3	1218	Michael Feinstein and Christine Ebersole
+./2012/December/1218mf-ce-reh3.MP3	1218	Michael Feinstein and Christine Ebersole
+./2012/December/1218mf-ce-reh4.MP3	1218	Michael Feinstein and Christine Ebersole
+./2012/December/1218mf-ce-reh5.MP3	1218	Michael Feinstein and Christine Ebersole
+./2012/December/1218mf-ce-reh6.MP3	1218	Michael Feinstein and Christine Ebersole
+./2012/December/1218mf-ce-reh7.MP3	1218	Michael Feinstein and Christine Ebersole
+./2012/December/1218mf-ce-reh8.MP3	1218	Michael Feinstein and Christine Ebersole
+./2012/December/1218mf.MP3	1218	Michael Feinstein
+./2012/December/1219mf.MP3	1219	Michael Feinstein
+./2012/December/1220ballyhoo.MP3	1220	broadwayballyhoo
+./2012/December/1220mf.MP3	1220	Michael Feinstein
+./2012/December/1221MFearly.MP3	1221	Michael Feinstein
+./2012/December/1221MFlate.MP3	1221	Michael Feinstein
+./2012/December/1222MFearly.MP3	1222	Michael Feinstein
+./2012/December/1222MFlate.MP3	1222	Michael Feinstein
+./2012/December/1223MFandCE.MP3	1223	Michael Feinstein and Christine Ebersole
+./2012/December/1224MFandCE.MP3	1224	Michael Feinstein and Christine Ebersole
+./2012/December/1225MFandCE.MP3	1225	Michael Feinstein and Christine Ebersole
+./2012/December/1226mfce.MP3	1226	Michael Feinstein and Christine Ebersole
+./2012/December/1227mf.MP3	1227	Michael Feinstein and Christine Ebersole
+./2012/December/1228mfce early.MP3	1228	Michael Feinstein and Christine Ebersole
+./2012/December/1228mfce late.MP3	1228	Michael Feinstein and Christine Ebersole
+./2012/December/1229mfce early.MP3	1229	Michael Feinstein and Christine Ebersole
+./2012/December/1229mfce late.MP3	1229	Michael Feinstein and Christine Ebersole
+./2012/December/1230MFandCE.MP3	123012	Michael Feinstein and Christine Ebersole
+./2012/December/1231CE ONLY NYE.MP3	123112	Christine Ebersole
+./2012/December/1231MFandCE NYE.MP3	123112	Michael Feinstein and Christine Ebersole
+./2012/February/0201petulaclark.MP3	201	Petula Clark
+./2012/February/0202broadwayballyhoo.MP3	202	broadwayballyhoo
+./2012/February/0202petulaclark.MP3	202	Petula Clark
+./2012/February/0203petulaclark.MP3	203	Petula Clark
+./2012/February/0203petulaclark_late.MP3	203	Petula Clark
+./2012/February/0204petulaclark.MP3	204	Petula Clark
+./2012/February/0204petulaclark_late.MP3	204	Petula Clark
+./2012/February/0206harryallen.MP3	206	Harry Allen
+./2012/February/0208broadwayballyhoo.MP3	208	broadwayballyhoo
+./2012/February/0209johnmalino.MP3	209	John Malino Band
+./2012/February/0209petulaclark.MP3	209	Petula Clark
+./2012/February/0210petulaclark.MP3	210	Petula Clark
+./2012/February/0211petulaclark.MP3	211	Petula Clark
+./2012/February/0212CarolineJones.MP3	212	Caroline Jones
+./2012/February/0213Ingrid.MP3	213	Ingrid Lucia
+./2012/February/0214lilanthony.MP3	214	Little Anthony
+./2012/February/0215jerrycostanzo.MP3	215	Jerry Costanzo
+./2012/February/0215lilanthony.MP3	215	Little Anthony
+./2012/February/0216broadwayballyhoo.MP3	216	broadwayballyhoo
+./2012/February/0216lilanthony.MP3	216	Lil Anthony
+./2012/February/0217lilanthony-late.MP3	217	Lil Anthony
+./2012/February/0217lilanthony.MP3	217	Lil Anthony
+./2012/February/0218lilanthony-late.MP3	218	Lil Anthony
+./2012/February/0218lilanthony.MP3	218	Lil Anthony
+./2012/February/0219dntwnamberbridget.MP3	219	Amber Martin  and Bridget Everest
+./2012/February/0221EMGandLaTanya.MP3	221	Eric Michael Gillett and La Tanya Hall
+./2012/February/0222EMGandLaTanya.MP3	222	Eric Michael Gillett and La Tanya Hall
+./2012/February/0223broadwayballyhoo.MP3	223	broadwayballyhoo
+./2012/February/0223EMGandLaTanya.MP3	223	Eric Michael Gillett and La Tanya Hall
+./2012/February/0224EMGandLaTanya.MP3	224	Eric Michael Gillett and La Tanya Hall
+./2012/February/0225EMGandLaTanya.MP3	225	Eric Michael Gillett and La Tanya Hall
+./2012/February/0226Meringolo.MP3	226
+./2012/February/0228downtownmollyandcole.MP3	228	Molly Pope and Cole Escola
+./2012/February/0229downtownangelaandnatalie.MP3	229	angelaandnatalie
+./2012/January/0104garfunkel.MP3	104	Art garfunkel
+./2012/January/0105bwayballyhoo.MP3	105	broadwayballyhoo
+./2012/January/0105luciearnaz.MP3	105	Lucie Arnaz
+./2012/January/0106luciearnaz.MP3	106	Lucie Arnaz
+./2012/January/0107luciearnaz.MP3	107	Lucie Arnaz
+./2012/January/0108luciearnaz.MP3	108	Lucie Arnaz
+./2012/January/0109maureenoflynn.MP3	109	Maureen Flynn
+./2012/January/0110maureenoflynn.MP3	110	Maureen Flynn
+./2012/January/0111jennaesposito.MP3	111	jenna esposito
+./2012/January/0111johnmalino.MP3	111	John Malino
+./2012/January/0112broadwayballyhoo.MP3	112	broadwayballyhoo
+./2012/January/0112jakelomatto.MP3	112	Jake LaMotta
+./2012/January/0113annabergman.MP3	113	Anna Bergman
+./2012/January/0114annabergman.MP3	114	Anna Bergman
+./2012/January/0115tameladamico.MP3	115	Tamela D'Amico
+./2012/January/0116petermintun.MP3	116	Peter Mintun
+./2012/January/0116rajdulari.MP3	116	Rajdulari - Terrell Carter
+./2012/January/0117oursinatra.MP3	117	Our Sinatra
+./2012/January/0119jerrycostanzo.MP3	119	jerry costanzo
+./2012/January/0119oursinatra.MP3	119	Our Sinatra
+./2012/January/0120broadwayballyhoo.MP3	120	broadwayballyhoo
+./2012/January/0120oursinatra-late.MP3	120	Our Sinatra
+./2012/January/0120oursinatra.MP3	120	Our Sinatra
+./2012/January/0121oursinatra-late.MP3	121	our sinatra
+./2012/January/0121oursinatra.MP3	121	our sinatra
+./2012/January/0122carolinejones.MP3	122	Caroline Jones
+./2012/January/0123brendanjames.MP3	123	Brendan James
+./2012/January/0124petulaclark.MP3	124	Petula Clark
+./2012/January/0125petulaclark.MP3	125	Petula Clark
+./2012/January/0126broadwayballyhoo.MP3	126	broadwayballyhoo
+./2012/January/0126petulaclark.MP3	126	Petula Clark
+./2012/January/0127petulaclark-late.MP3	127	Petula Clark
+./2012/January/0127petulaclark.MP3	127	Petula Clark
+./2012/January/0128petulaclark-late.MP3	128	Petula Clark
+./2012/January/0128petulaclark.MP3	128	Petula Clark
+./2012/January/0129markballas.MP3	129	mark ballas
+./2012/January/0130betteandevelyn.MP3	130	Bette and evelyn
+./2012/January/0131petulaclark.MP3	131	Petula Clark
+./2012/July/0710nunziata.MP3	710	Will and Anthony Nunziata
+./2012/July/0711nunziata.MP3	711	Will and Anthony Nunziata
+./2012/July/0712broadwayballyhoo.MP3	712	broadwayballyhoo
+./2012/July/0712nunziata.MP3	712	Will and Anthony Nunziata
+./2012/July/0713nunziata.MP3	713	Will and Anthony Nunziata
+./2012/July/0714nunziata.MP3	714	Will and Anthony Nunziata
+./2012/July/0717broadwayballyhoo.MP3	717	broadwayballyhoo
+./2012/July/0718broadwayballyhoo.MP3	718	broadwayballyhoo
+./2012/July/0719broadwayballyhoo.MP3	719	broadwayballyhoo
+./2012/July/0720broadwayballyhoo.MP3	720	broadwayballyhoo
+./2012/July/0721broadwayballyhoo.MP3	721	broadwayballyhoo
+./2012/July/0724karenoberlin.MP3	724	Karen Oberlin
+./2012/July/0725karenoberlin.MP3	725	Karen Oberlin
+./2012/July/0726broadwayballyhoo.MP3	726	broadwayballyhoo
+./2012/July/0726karenoberlin.MP3	726	Karen Oberlin
+./2012/July/0727karenoberlin.MP3	727	Karen Oberlin
+./2012/July/0728karenoberlin.MP3	728	Karen Oberlin
+./2012/July/0731kilgoreharryallen.MP3	731	Rebecca Kilgore and Harry Allen
+./2012/June/0601jennifersheehan.MP3	601	Jennifer Sheehan
+./2012/June/0602jennifersheehan-late.MP3	602	Jennifer Sheehan
+./2012/June/0602jennifersheehan.MP3	602	Jennifer Sheehan
+./2012/June/0603melaniestace.MP3	603	melanie stace
+./2012/June/0604melaniestace.MP3	604	melanie stace
+./2012/June/0605carolinejones.MP3	605	Caroline Jones
+./2012/June/0605maudemaggart.MP3	605	Maude Maggart
+./2012/June/0606maudemaggart.MP3	606	Maude Maggart
+./2012/June/0607broadwayballyhoo.MP3	607	broadwayballyhoo
+./2012/June/0607maudemaggart.MP3	607	Maude Maggart
+./2012/June/0608maudemaggart.MP3	608	Maude Maggart
+./2012/June/0609maudemaggart.MP3	609	Maude Maggart
+./2012/June/0610jazz1.MP3	610	Jazz 1
+./2012/June/0610jazz2.MP3	610	Jazz 2
+./2012/June/0610jazz3.MP3	610	Jazz 3
+./2012/June/0611alexgetlin.MP3	611	Alex Getlin
+./2012/June/0612maudemaggart.MP3	612	Maude Maggart
+./2012/June/0613johnmalino.MP3	613	John Malino
+./2012/June/0613maudemaggart.MP3	613	Maude Maggart
+./2012/June/0614broadwayballyhoo.MP3	614	broadwayballyhoo
+./2012/June/0614maudemaggart.MP3	614	Maude Maggart
+./2012/June/0615maudemaggart.MP3	615	Maude Maggart
+./2012/June/0616maudemaggart.MP3	616	Maude Maggart
+./2012/June/0617kayeballard.MP3	617	Kaye Ballard
+./2012/June/0618mattandjenny.MP3	618	Matt Cavenaugh and Jenny Powers
+./2012/June/0618mintun.MP3	618	Peter Mintun
+./2012/June/0619peterasher.MP3	619	Peter Asher
+./2012/June/0620peterasher.MP3	620	Peter Asher
+./2012/June/0621broadwayballyhoo.MP3	621	broadwayballyhoo
+./2012/June/0621peterasher.MP3	621	Peter Asher
+./2012/June/0622peterasher-late.MP3	622	Peter Asher
+./2012/June/0622peterasher.MP3	622	Peter Asher
+./2012/June/0623peterasher-late.MP3	623	Peter Asher
+./2012/June/0623peterasher.MP3	623	Peter Asher
+./2012/June/0624jodyjoseph.MP3	624	Jody Joseph
+./2012/June/0625jodyjoseph.MP3	625	Jody Joseph
+./2012/June/0626jackjones.MP3	626	Joack Jones
+./2012/June/0627carolinejones.MP3	627	Caroline Jones
+./2012/June/0627jackjones.MP3	627	Joack Jones
+./2012/June/0628broadwayballyhoo.MP3	628	broadwayballyhoo
+./2012/June/0628jackjones.MP3	628	Joack Jones
+./2012/June/0629jackjones-late.MP3	629	Joack Jones
+./2012/June/0629jackjones.MP3	629	Joack Jones
+./2012/June/0630jackjones-late.MP3	630	Joack Jones
+./2012/June/0630jackjones.MP3	630	Joack Jones
+./2012/March/0301broadwayballyhoo.MP3	301	broadwayballyhoo
+./2012/March/0301carolinejones.MP3	301	Caroline Jones
+./2012/March/0302gloriareuben.MP3	302	Gloria Reuben
+./2012/March/0303gloriareuben.MP3	303	Gloria Reuben
+./2012/March/0304marieannmeringolo.MP3	304	Marieann Meringolo
+./2012/March/0305harryallen1.MP3	305	Harry Allen
+./2012/March/0305harryallen2.MP3	305	Harry Allen
+./2012/March/0305harryallen3.MP3	305	Harry Allen
+./2012/March/0305Jazz1.MP3	305	Jazz 1
+./2012/March/0305Jazz2.MP3	305	Jazz 2
+./2012/March/0305Jazz3.MP3	305	Jazz 3
+./2012/March/0306judykuhn.MP3	306	Judy Kuhn
+./2012/March/0307alexsilber.MP3	307	alex silber
+./2012/March/0307bryanreedertrio.MP3	307	bryan reeder trio
+./2012/March/0308broadwayballyhoo.MP3	308	broadwayballyhoo
+./2012/March/0308judykuhn.MP3	308	Judy Kuhn
+./2012/March/0309judykuhn-late.MP3	309	Judy Kuhn
+./2012/March/0309judykuhn.MP3	309	Judy Kuhn
+./2012/March/0310judykuhn-late.MP3	310	Judy Kuhn
+./2012/March/0310judykuhn.MP3	310	Judy Kuhn
+./2012/March/0311marieannmeringolo.MP3	311	Marieann Meringolo
+./2012/March/0312Faulkenberry.MP3	312	Rebecca Faulkenberry
+./2012/March/0313lindaeder.MP3	313	Linda Eder
+./2012/March/0314johnmalino.MP3	314	John Malino
+./2012/March/0314lindaeder.MP3	314	Linda Eder
+./2012/March/0315broadwayballyhoo.MP3	315	broadwayballyhoo
+./2012/March/0315lindaeder.MP3	315	Linda Eder
+./2012/March/0316lindaeder-late.MP3	316	Linda Eder
+./2012/March/0316lindaeder.MP3	316	Linda Eder
+./2012/March/0317lindaeder-late.MP3	317	Linda Eder
+./2012/March/0317lindaeder.MP3	317	Linda Eder
+./2012/March/0318Meringolo.MP3	318	Marieann Meringolo
+./2012/March/0320nelliemckay.MP3	320	Nellie McKay
+./2012/March/0320petermintun.MP3	320	Peter Mintun
+./2012/March/0321jerrycostanzo.MP3	321	jerry costanzo
+./2012/March/0321nelliemckay.MP3	321	Nellie McKay
+./2012/March/0322broadwayballyhoo.MP3	322	broadwayballyhoo
+./2012/March/0322nelliemckay.MP3	322	Nellie McKay
+./2012/March/0323nelliemckay.MP3	323	Nellie McKay
+./2012/March/0324nelliemckay-late.MP3	324	Nellie McKay
+./2012/March/0324nelliemckay.MP3	324	Nellie McKay
+./2012/March/0327nelliemckay.MP3	327	Nellie McKay
+./2012/March/0328nelliemckay.MP3	328	Nellie McKay
+./2012/March/0329broadwayballyhoo.MP3	329	broadwayballyhoo
+./2012/March/0329nelliemckay.MP3	329	Nellie McKay
+./2012/March/0330nelliemckay-late.MP3	330	Nellie McKay
+./2012/March/0330nelliemckay.MP3	330	Nellie McKay
+./2012/March/0331nelliemckay-late.MP3	331	Nellie McKay
+./2012/March/0331nelliemckay.MP3	331	Nellie McKay
+./2012/May/0501marilynmaye.MP3	501	Marilyn Maye
+./2012/May/0502marilynmaye.MP3	502	Marilyn Maye
+./2012/May/0503broadwayballyhoo.MP3	503	broadwayballyhoo
+./2012/May/0503marilynmaye.MP3	503	Marilyn Maye
+./2012/May/0504marilynmaye.MP3	504	Marilyn Maye
+./2012/May/0505marilynmaye-late.MP3	505	Marilyn Maye
+./2012/May/0505marilynmaye.MP3	505	Marilyn Maye
+./2012/May/0506peggyherman.MP3	506	Peggy Herman
+./2012/May/0507mf-1.MP3	507
+./2012/May/0507mf-2.MP3	507
+./2012/May/0507mf-3.MP3	507
+./2012/May/0508NicoleHenry.MP3	508	Nicole Henry
+./2012/May/0509johnmalino.MP3	509	John Malino
+./2012/May/0509nicolehenry.MP3	509	Nicole Henry
+./2012/May/0510broadwayballyhoo.MP3	510	Nicole Henry
+./2012/May/0510nicolehenry.MP3	510	Nicole Henry
+./2012/May/0511nicolehenry-late.MP3	511	Nicole Henry
+./2012/May/0511nicolehenry.MP3	511	Nicole Henry
+./2012/May/0512nicolehenry-late.MP3	512	Nicole Henry
+./2012/May/0512nicolehenry.MP3	512	Nicole Henry
+./2012/May/0513tomdreesen.MP3	513	Tom Dreesen
+./2012/May/0514barrykay.MP3	514	Barry Kay
+./2012/May/0515Mintun.MP3	515	Peter Mintun
+./2012/May/0515sheerabendavid.MP3	515	Sheera Ben David
+./2012/May/0516Fredo.MP3	516	Michael Fredo
+./2012/May/0516sheerabendavid.MP3	516	Sheera Ben David
+./2012/May/0517Bwayballyhoo.MP3	517	broadwayballyhoo
+./2012/May/0517sheerabendavid.MP3	517	Sheera Ben David
+./2012/May/0518sheerabendavid-late.MP3	518	Sheera Ben David
+./2012/May/0518sheerabendavid.MP3	518	Sheera Ben David
+./2012/May/0519sheerabendavid-late.MP3	519	Sheera Ben David
+./2012/May/0519sheerabendavid.MP3	519	Sheera Ben David
+./2012/May/0522carolinejones.MP3	522	Caroline Jones
+./2012/May/0524broadwayballyhoo.MP3	524	broadwayballyhoo
+./2012/May/0524jennifersheehan.MP3	524	Jennifer Sheehan
+./2012/May/0525jennifersheehan.MP3	525	Jennifer Sheehan
+./2012/May/0529jennifersheehan.MP3	529	Jennifer Sheehan
+./2012/May/0530jennifersheehan.MP3	530	Jennifer Sheehan
+./2012/May/0531broadwayballyhoo.MP3	531	broadwayballyhoo
+./2012/May/0531jennifersheehan.MP3	531	Jennifer Sheehan
+./2012/November/1101tamaratunie.MP3	1101	Tamara Tunie
+./2012/November/1102tamaratunie.MP3	1102	Tamara Tunie
+./2012/November/1103tamaratunie-late.MP3	1103	Tamara Tunie
+./2012/November/1103tamaratunie.MP3	1103	Tamara Tunie
+./2012/November/1104lindseymendez.MP3	1104	Lindsey Mendez
+./2012/November/1105jazz1.MP3	1105	Jazz 1
+./2012/November/1105jazz2.MP3	1105	Jazz 2
+./2012/November/1107sueraney.MP3	1107	Sue Raney
+./2012/November/1108ballyhoo.MP3	1108	broadwayballyhoo
+./2012/November/1108sueraney.MP3	1108	Sue Raney
+./2012/November/1109sueraney.MP3	1109	Sue Raney
+./2012/November/1110sueraney1.MP3	1110	Sue Raney
+./2012/November/1110sueraney2.MP3	1110	Sue Raney
+./2012/November/1111betteandelaine.MP3	1111	Bette Sussman and Elaine Caswell
+./2012/November/1112doowop.MP3	1112	doo wop
+./2012/November/1113petergallagher.MP3	1113	Peter Gallagher
+./2012/November/1114petergallagher.MP3	1114	Peter Gallagher
+./2012/November/1115ballyhoo.MP3	1115	broadwayballyhoo
+./2012/November/1115petergallagher.MP3	1115	Peter Gallagher
+./2012/November/1116petergallagher-late.MP3	1116	Peter Gallagher
+./2012/November/1116petergallagher.MP3	1116	Peter Gallagher
+./2012/November/1117petergallagher-late.MP3	1117	Peter Gallagher
+./2012/November/1117petergallagher.MP3	1117	Peter Gallagher
+./2012/November/1118tommytune.MP3	1118	tommy tune
+./2012/November/1119charlap:stewart.MP3	1119	Sandy Stewart and Bill Charlap
+./2012/November/1120charlapstewart.MP3	1120	Sandy Stewart and Bill Charlap
+./2012/November/1121charlapstewart.MP3	1121	Sandy Stewart and Bill Charlap
+./2012/November/1123charlapstewart.MP3	1123	Sandy Stewart and Bill Charlap
+./2012/November/1124charlap:stewartearly.MP3	1124	Sandy Stewart and Bill Charlap
+./2012/November/1124charlap:stewartlate.MP3	1124	Sandy Stewart and Bill Charlap
+./2012/November/1125TommyTune.MP3	1125	tommytune
+./2012/November/1126TommyTune1.MP3	1126	tommytune
+./2012/November/1126TommyTune2.MP3	1126	tommytune
+./2012/November/1127MF.MP3	1127	Michael Feinstein
+./2012/November/1128feinstein 1.MP3	1128	Michael Feinstein
+./2012/November/1128feinstein 2.MP3	1128	Michael Feinstein
+./2012/November/1128toliverreid.MP3	1128	T Oliver Reid
+./2012/November/1129ballyhoo.MP3	1129	broadwayballyhoo
+./2012/November/1129mf.MP3	1129	Michael Feinstein
+./2012/November/1130mf-late.MP3	1130	Michael Feinstein
+./2012/November/1130mf.MP3	1130	Michael Feinstein
+./2012/October/1001lindapurl.MP3	1001	Linda Purl
+./2012/October/1002bettybuckley.MP3	1002	Betty Buckley
+./2012/October/1003bettybuckley.MP3	1003	Betty Buckley
+./2012/October/1004bettybuckley.MP3	1004	Betty Buckley
+./2012/October/1004broadwayballyhoo.MP3	1004	broadwayballyhoo
+./2012/October/1005bettybuckley-late.MP3	1005	Betty Buckley
+./2012/October/1005bettybuckley.MP3	1005	Betty Buckley
+./2012/October/1006bettybuckley-late.MP3	1006	Betty Buckley
+./2012/October/1006bettybuckley.MP3	1006	Betty Buckley
+./2012/October/1007eddiebruce.MP3	1007	Eddie Bruce
+./2012/October/1008jazz1.MP3	1008	Jazz 1
+./2012/October/1008jazz2.MP3	1008	Jazz 2
+./2012/October/1008jazz3.MP3	1008	Jazz 3
+./2012/October/1009bettybuckley.MP3	1009	Betty Buckley
+./2012/October/1010bettybuckley.MP3	1010	Betty Buckley
+./2012/October/1011ballyhoo.MP3	1011	broadwayballyhoo
+./2012/October/1011bettybuckley.MP3	1011	Betty Buckley
+./2012/October/1012bettybuckley-late.MP3	1012	Betty Buckley
+./2012/October/1012bettybuckley.MP3	1012	Betty Buckley
+./2012/October/1013bettybuckley.MP3	1013	Betty Buckley
+./2012/October/1014BetteandEvelyn.MP3	1014	BetteandEvelyn
+./2012/October/1015annabergman.MP3	1015	Anna Bergman
+./2012/October/1016bettybuckley.MP3	1016	Betty Buckley
+./2012/October/1017arianasavalas.MP3	1017	ariana savalas
+./2012/October/1017bettybuckley.MP3	1017	Betty Buckley
+./2012/October/1018ballyhoo.MP3	1018	broadwayballyhoo
+./2012/October/1018bettybuckley.MP3	1018	Betty Buckley
+./2012/October/1019bettybuckley-late.MP3	1019	Betty Buckley
+./2012/October/1019bettybuckley.MP3	1019	Betty Buckley
+./2012/October/1020bettybuckley-late.MP3	1020	Betty Buckley
+./2012/October/1020bettybuckley.MP3	1020	Betty Buckley
+./2012/October/1021annabergman.MP3	1021	Anna Bergman
+./2012/October/1022annabergman.MP3	1022	Anna Bergman
+./2012/October/1023bettybuckley.MP3	1023	Betty Buckley
+./2012/October/1024bettybuckley.MP3	1024	Betty Buckley
+./2012/October/1025ballyhoo.MP3	1025	broadwayballyhoo
+./2012/October/1025bettybuckley.MP3	1025	Betty Buckley
+./2012/October/1026bettybuckley-late.MP3	1026	Betty Buckley
+./2012/October/1026bettybuckley.MP3	1026	Betty Buckley
+./2012/October/1027BBearly.MP3	1027	B Bearly
+./2012/October/1027BBlate.MP3	1027	B Blate
+./2012/October/1028annabergman.MP3	1028	Anna Bergman
+./2012/October/1029annabergman.MP3	1029	Anna Bergman
+./2012/October/1031tamaratunie.MP3	1031	Tamara Tunie
+./2012/September/0904MF:MM.MP3	904	Michael Feinstein and Marilyn Maye
+./2012/September/0905MFandMM.MP3	905	Michael Feinstein and Marilyn Maye
+./2012/September/0906ballyhoo.MP3	906	broadwayballyhoo
+./2012/September/0906MFandMM.MP3	906	Michael Feinstein and Marilyn Maye
+./2012/September/0907MMandMFearly.MP3	907	Michael Feinstein and Marilyn Maye
+./2012/September/0907MMandMFlate.MP3	907	Michael Feinstein and Marilyn Maye
+./2012/September/0908MMandMFearly.MP3	908	Michael Feinstein and Marilyn Maye
+./2012/September/0908MMandMFlate.MP3	908	Michael Feinstein and Marilyn Maye
+./2012/September/0909BetteandEvelyn.MP3	909	BetteandEvelyn
+./2012/September/0910jazz1.MP3	910	jazz1
+./2012/September/0910jazz2and3.MP3	910	jazz2and3
+./2012/September/0911mfandmm.MP3	911	Michael Feinstein and Marilyn Maye
+./2012/September/0912mfandmm.MP3	912	Michael Feinstein and Marilyn Maye
+./2012/September/0913ballyhoo.MP3	913	broadwayballyhoo
+./2012/September/0913mfandmm.MP3	913	Michael Feinstein and Marilyn Maye
+./2012/September/0914MMandMFearly.MP3	914	Michael Feinstein and Marilyn Maye
+./2012/September/0914MMandMFlate.MP3	914	Michael Feinstein and Marilyn Maye
+./2012/September/0915MMandMFearly.MP3	915	Michael Feinstein and Marilyn Maye
+./2012/September/0915MMandMFlate.MP3	915	Michael Feinstein and Marilyn Maye
+./2012/September/0916MelanieStace.MP3	916	Melanie Stace
+./2012/September/0917MelanieStace.MP3	917	Melanie Stace
+./2012/September/0919mfandmm.MP3	919	Michael Feinstein and Marilyn Maye
+./2012/September/0920ballyhoo.MP3	920	broadwayballyhoo
+./2012/September/0920mmandmf.MP3	920	Michael Feinstein and Marilyn Maye
+./2012/September/0921mmandmf.MP3	921	Michael Feinstein and Marilyn Maye
+./2012/September/0922mmandmf-late.MP3	922	Michael Feinstein and Marilyn Maye
+./2012/September/0922mmandmf.MP3	922	Michael Feinstein and Marilyn Maye
+./2012/September/0923carolinejones1.MP3	923	Caroline Jones
+./2012/September/0923carolinejones2.MP3	923	Caroline Jones
+./2012/September/0924rmhbenefit.MP3	924	rmh benefit
+./2012/September/0925BSR1.MP3	925	BSR
+./2012/September/0925BSR2.MP3	925	BSR
+./2012/September/0926ambermartin.MP3	926	Amber Martin
+./2012/September/0926kennyloggins.MP3	926	Kenny Loggins
+./2012/September/0927ballyhoo.MP3	927	broadwayballyhoo
+./2012/September/0927blueskyriders.MP3	927	Blue Sky Riders
+./2012/September/0928blueskyriders-late.MP3	928	Blue Sky Riders
+./2012/September/0928blueskyriders.MP3	928	Blue Sky Riders
+./2012/September/0929blueskyriders-late.MP3	929	Blue Sky Riders
+./2012/September/0929blueskyriders.MP3	929	Blue Sky Riders
+./2012/September/0930lindapurl.MP3	930	Linda Purl

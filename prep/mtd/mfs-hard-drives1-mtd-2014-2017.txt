@@ -1,0 +1,464 @@
+./2014/20140206_Sarasota/T16.WAV	20140206_SarasotaFL_Rehearsal	Michael Feinstein
+./2014/20140206_Sarasota/T17.WAV	20140206_SarasotaFL_act 1	Michael Feinstein
+./2014/20140206_Sarasota/T18.WAV	20140206_SarasotaFL_act 2 Part 1	Michael Feinstein
+./2014/20140206_Sarasota/T19.WAV	20140206_SarasotaFL_act 2 part 2	Michael Feinstein
+./2014/20140207_WPB/T20.WAV	20140207_WestPalmBeachFL_act 1	Michael Feinstein
+./2014/20140207_WPB/T21.WAV	20140207_WestPalmBeachFL_act 2	Michael Feinstein
+./2014/20140208_Princeton/T22.WAV	20140208_PrincetonNJ_Rehearsal	Michael Feinstein
+./2014/20140208_Princeton/T23.WAV	20140208_PrincetonNJ_Rehearsal	Michael Feinstein
+./2014/20140208_Princeton/T24.WAV	20140208_PrincetonNJ_ Rehearsal	Michael Feinstein
+./2014/20140208_Princeton/T25.WAV	20140208_PrincetonNJ_Rehearsal	Michael Feinstein
+./2014/20140208_Princeton/T26.WAV	20140208_PrincetonNJ_ Rehearsal	Michael Feinstein
+./2014/20140208_Princeton/T27.WAV	20140208_PrincetonNJ_act 1	Michael Feinstein
+./2014/20140208_Princeton/T28.WAV	20140208_PrincetonNJ_ act 2	Michael Feinstein
+./2014/20140209_Naples/T29.WAV	20140209_NaplesFL_rehearsal	Michael Feinstein
+./2014/20140209_Naples/T30.WAV	20140209_NaplesFL_Rehearsal	Michael Feinstein
+./2014/20140209_Naples/T31.WAV	20140209_NaplesFL_ Act 1	Michael Feinstein
+./2014/20140209_Naples/T32.WAV	20140209_NaplesFL_Act 2	Michael Feinstein
+./2014/20140215_LousivilleSYM/T35.WAV	20140215_LouisvilleKY_Rehearsal1	Michael Feinstein
+./2014/20140215_LousivilleSYM/T36.WAV	20140215_LouisvilleKY_Rehearsal2	Michael Feinstein
+./2014/20140215_LousivilleSYM/T37.WAV	20140215_LouisvilleKY_Rehearsal3	Michael Feinstein
+./2014/20140215_LousivilleSYM/T38.WAV	20140215_LouisvilleKY_Rehearsal4	Michael Feinstein
+./2014/20140215_LousivilleSYM/T39.WAV	20140215_LouisvilleKY_Rehearsal5	Michael Feinstein
+./2014/20140215_LousivilleSYM/T40.WAV	20140215_LousivilleKY_symphony_Act1	Michael Feinstein
+./2014/20140215_LousivilleSYM/T41.WAV	20140215_LousivilleKY_symphony_Act2	Michael Feinstein
+./2014/20140216_CarmelBB/T42.WAV	20140216_CarmelIN_rehearsal1	Michael Feinstein
+./2014/20140216_CarmelBB/T43.WAV	20140216_CarmelIN_rehearsal2	Michael Feinstein
+./2014/20140216_CarmelBB/T44.WAV	20140216_CarmelIN_rehearsal3	Michael Feinstein
+./2014/20140216_CarmelBB/T45.WAV	20140216_CarmelIN_Big Band_Act 1	Michael Feinstein
+./2014/20140216_CarmelBB/T46.WAV	20140216_CarmelIN_Big Band_Act 2	Michael Feinstein
+./2014/20140224_KonaHI/T47.WAV	20140224_KonaHI	Michael Feinstein
+./2014/20140307_08_PalmDesert/T48.WAV	20140307PalmDesertCA_Act 1	Michael Feinstein
+./2014/20140307_08_PalmDesert/T49.WAV	20140307PalmDesertCA_Act 2	Michael Feinstein
+./2014/20140307_08_PalmDesert/T50.WAV	20140308PalmDesertCA_Act 1	Michael Feinstein
+./2014/20140307_08_PalmDesert/T51.WAV	20140308PalmDesertCA_Act 2	Michael Feinstein
+./2014/20140309_TusconAZ/T52.WAV	20140309_TusconAZ_Act 1	Michael Feinstein
+./2014/20140309_TusconAZ/T53.WAV	20140309_TusconAZ_Act 1_part 2	Michael Feinstein
+./2014/20140309_TusconAZ/T54.WAV	20140309_TusconAZ_Act 2	Michael Feinstein
+./2014/20140309_TusconAZ/T55.WAV	20140309_TusconAZ_Act 2_ Part 2	Michael Feinstein
+./2014/20140329_PebbleBeachCA/T56.WAV	20140329_PebbleBeachCA	Michael Feinstein
+./2014/20140409_10_CVGbook/T57.WAV	20140409_cincinnatiOH_book_9AM	Michael Feinstein
+./2014/20140409_10_CVGbook/T58.WAV	20140410_cincinnatiOH_book_9AM	Michael Feinstein
+./2014/20140409_10_CVGbook/T59.WAV	20140410_CcincinnatiOH_book_7PM	Michael Feinstein
+./2014/20140411_TCM/T63.WAV	20140411_TCM NYC taping_1	Michael Feinstein
+./2014/20140411_TCM/T64.WAV	20140411_TCM NYC taping_2	Michael Feinstein
+./2014/20140411_TCM/T66.WAV	20140411_TCM NYC taping_3	Michael Feinstein
+./2014/20140503_PurchaseNY_BB/T70.WAV	20140503_PurchaseNY_BB_rehearsal	Michael Feinstein
+./2014/20140503_PurchaseNY_BB/T72.WAV	20140503_PurchaseNY_BB	Michael Feinstein
+./2014/20140503_PurchaseNY_BB/T73.WAV	20140503_PurchaseNY_BB_rehearsal	Michael Feinstein
+./2014/20140503_PurchaseNY_BB/T74.WAV	20140503_PurchaseNY_BB_rehearsal	Michael Feinstein
+./2014/20140510_Tillesctr_combo/Act1_T75.WAV	20140510_GreenvaleNY_combo_Act1	Michael Feinstein
+./2014/20140510_Tillesctr_combo/Act2_T77.WAV	20140510_GreenvaleNY_combo_Act2	Michael Feinstein
+./2014/20140514_15_JALC_Porter/T78.WAV	20140514_NewYorNY_JALC_ColePorter	Michael Feinstein
+./2014/20140514_15_JALC_Porter/T79.WAV	20140515_NewYorkNY_JALC_ColePorter_N/A	Michael Feinstein
+./2014/20140514_15_JALC_Porter/T80.WAV	20140515_NewYorkNY_JALC_ColePorter_7PM	Michael Feinstein
+./2014/20140514_15_JALC_Porter/T81.WAV	20140515_NewYorkNY_JALC_ColePorter_9PM	Michael Feinstein
+./2014/20140529_31_Nikko/T102.WAV	20140531_SanFransiscoCA_Nikko_7 PM	Michael Feinstein
+./2014/20140529_31_Nikko/T103.WAV	20140531_SanFransiscoCA_Nikko_10 PM	Michael Feinstein
+./2014/20140529_31_Nikko/T95.WAV	20140529_SanFransiscoCA_Nikko_7PM	Michael Feinstein
+./2014/20140529_31_Nikko/T96.WAV	20140530_SanFransiscoCA_Nikko_7PM	Michael Feinstein
+./2014/20140607_pasadenapops/T104.WAV	20140607_pasadenapops_Act 1	Michael Feinstein
+./2014/20140607_pasadenapops/T105.WAV	20140607_pasadenapops_Act 2	Michael Feinstein
+./2014/20140611_JALC/T106_JALC.WAV	20140611_NewYorkNY_JALC_7PM	Michael Feinstein
+./2014/20140611_JALC/T107_JALC.WAV	20140611_NewYorkNY_JALC_7PM_N/A	Michael Feinstein
+./2014/20140611_JALC/T108_JALC.WAV	20140611_NewYorkNY_JALC_7PM_opening	Michael Feinstein
+./2014/20140611_JALC/T109_JALC.WAV	20140612_NewYorkNY_JALC_7PM	Michael Feinstein
+./2014/20140611_JALC/T110_JALC.WAV	20140612_NewYorkNY_JALC_9PM	Michael Feinstein
+./2014/20140614_HamiltonOH/T111_Hamilton.WAV	20140614_HamiltonOH	Michael Feinstein
+./2014/20140616_TCM/T112.WAV	20140616_TCM Filming1	Michael Feinstein
+./2014/20140616_TCM/T113.WAV	20140616_TCM Filming2	Michael Feinstein
+./2014/20140616_TCM/T114.WAV	20140616_TCM Filming3	Michael Feinstein
+./2014/20140616_TCM/T115.WAV	20140616_TCM Filming4	Michael Feinstein
+./2014/20140616_TCM/T116.WAV	20140616_TCM Filming5	Michael Feinstein
+./2014/20140616_TCM/T117.WAV	20140616_TCM Filming6	Michael Feinstein
+./2014/20140616_TCM/T118.WAV	20140616_TCM Filming7	Michael Feinstein
+./2014/20140616_TCM/T119.WAV	20140616_TCM Filming8	Michael Feinstein
+./2014/20140616_TCM/T120.WAV	20140616_TCM Filming9	Michael Feinstein
+./2014/20140616_TCM/T121.WAV	20140616_TCM Filming10	Michael Feinstein
+./2014/20140616_TCM/T122.WAV	20140616_TCM Filming11	Michael Feinstein
+./2014/20140620_Carmelball/T132.WAV	20140620_Carmel IN Ball_	Michael Feinstein
+./2014/20140620_Carmelball/T133.WAV	20140620_Carmel IN Ball_	Michael Feinstein
+./2014/20140620_Carmelball/T134.WAV	20140620_Carmel IN Ball_	Michael Feinstein
+./2014/20140620_Carmelball/T135_carmelBall.WAV	20140620_Carmel IN Ball_	Michael Feinstein
+./2014/20140621_Carmelgala/T143_carmelgala.WAV	20140621_Carmel IN Gala_	Michael Feinstein
+./2014/20140711_KansascityMOTrio/T144.WAV	20140711_KansascityMOTrio_Act 1	Michael Feinstein
+./2014/20140711_KansascityMOTrio/T145.WAV	20140711_KansascityMOTrio_Act 2	Michael Feinstein
+./2014/20140719_pasadenapops/T146.WAV	20140719_pasadenapops_Act 1	Michael Feinstein
+./2014/20140719_pasadenapops/T147.WAV	20140719_pasadenapops_Act 2	Michael Feinstein
+./2014/20140724_carmelvocal/T148.WAV	20140724_carmel IN vocal compatition1	Michael Feinstein
+./2014/20140724_carmelvocal/T149.WAV	20140724_carmel IN vocal compatition2	Michael Feinstein
+./2014/20140724_carmelvocal/T150.WAV	20140724_carmel IN vocal compatition3	Michael Feinstein
+./2014/20140724_carmelvocal/T151.WAV	20140724_carmel IN vocal compatition4	Michael Feinstein
+./2014/20140724_carmelvocal/T152.WAV	20140724_carmel IN vocal compatition5	Michael Feinstein
+./2014/20140725_carmelVocalcomp/T153.WAV	20140725_carmel IN Vocal compatition Award Night Act 1	Michael Feinstein
+./2014/20140725_carmelVocalcomp/T154.WAV	20140725_carmel IN Vocal compatition Award Night Act 2	Michael Feinstein
+./2014/20140806_capeCod/T155.WAV	20140806_capeCod MA	Michael Feinstein
+./2014/20140809_WestHamptonNY_Trio/T156.WAV	20140809_WestHamptonNY_Trio	Michael Feinstein
+./2014/20140810_GreatBarringtonMA- TRIO/T157.WAV	20140810_GreatBarringtonMA- TRIO	Michael Feinstein
+./2014/20140812_LOC WEashingtonDC/T158.WAV	20140812_LOC WashingtonDC	Michael Feinstein
+./2014/20140816_pasadenaPops/T159.WAV	20140816_pasadenaPops_Act 1	Michael Feinstein
+./2014/20140816_pasadenaPops/T160.WAV	20140816_pasadenaPops_Act 2	Michael Feinstein
+./2014/20140821_Rainbow Room/T161.WAV	20140821_Rainbow Room_Rehearsal1	Michael Feinstein
+./2014/20140821_Rainbow Room/T162.WAV	20140821_Rainbow Room_Rehearsal2	Michael Feinstein
+./2014/20140821_Rainbow Room/T163.WAV	20140821_Rainbow Room_Rehearsal3	Michael Feinstein
+./2014/20140821_Rainbow Room/T164.WAV	20140821_Rainbow Room_Rehearsal4	Michael Feinstein
+./2014/20140821_Rainbow Room/T165.WAV	20140821_Rainbow Room_Rehearsal5	Michael Feinstein
+./2014/20140821_Rainbow Room/T166.WAV	20140821_Rainbow Room_Rehearsal6	Michael Feinstein
+./2014/20140821_Rainbow Room/T167.WAV	20140821_Rainbow Room_Rehearsal7	Michael Feinstein
+./2014/20140821_Rainbow Room/T168.WAV	20140821_Rainbow Room_Rehearsal8	Michael Feinstein
+./2014/20140821_Rainbow Room/T169.WAV	20140821_Rainbow Room	Michael Feinstein
+./2014/20140822_Rainbow Room/T170.WAV	20140822_Rainbow Room	Michael Feinstein
+./2014/20140822_Rainbow Room/T171.WAV	20140822_Rainbow Room	Michael Feinstein
+./2014/20140823_RainbowRoom/T172.WAV	20140823_RainbowRoom Rehearsal1	Michael Feinstein
+./2014/20140823_RainbowRoom/T173.WAV	20140823_RainbowRoom Rehearsal2	Michael Feinstein
+./2014/20140823_RainbowRoom/T174.WAV	20140823_RainbowRoom Rehearsal3	Michael Feinstein
+./2014/20140823_RainbowRoom/T175.WAV	20140823_RainbowRoom Rehearsal4	Michael Feinstein
+./2014/20140823_RainbowRoom/T176.WAV	20140823_RainbowRoom	Michael Feinstein
+./2014/20140823_RainbowRoom/T177.WAV	20140823_RainbowRoom Rehearsal	Michael Feinstein
+./2014/20140829_London/T178.WAV	20140829_London_Rehearsal1	Michael Feinstein
+./2014/20140829_London/T179.WAV	20140829_London_Rehearsal2	Michael Feinstein
+./2014/20140829_London/T180.WAV	20140829_London_Rehearsal3	Michael Feinstein
+./2014/20140829_London/T181.WAV	20140829_London_Rehearsal4	Michael Feinstein
+./2014/20140829_London/T182.WAV	20140829_London_Rehearsal5	Michael Feinstein
+./2014/20140829_London/T183.WAV	20140829_London_Rehearsal6	Michael Feinstein
+./2014/20140829_London/T184.WAV	20140829_London_Rehearsal7	Michael Feinstein
+./2014/20140829_London/T185.WAV	20140829_London_Rehearsal8	Michael Feinstein
+./2014/20140829_London/T186.WAV	20140829_London_Act 1	Michael Feinstein
+./2014/20140829_London/T187.WAV	20140829_London_Act 2	Michael Feinstein
+./2014/20140906_Pasadena/pasadena/T104_Pasadena1.WAV	20140906_Pasadena_Act 1_copy	Michael Feinstein
+./2014/20140906_Pasadena/pasadena/T105_pasadena2.WAV	20140906_Pasadena_Act 2_copy	Michael Feinstein
+./2014/20140906_Pasadena/T188.WAV	20140906_Pasadena_Act 1	Michael Feinstein
+./2014/20140906_Pasadena/T190.WAV	20140906_Pasadena_Act 2	Michael Feinstein
+./2014/20140912_PalosVerdes_trio/T191.WAV	20140912_PalosVerdes_trio_act 1	Michael Feinstein
+./2014/20140912_PalosVerdes_trio/T192.WAV	20140912_PalosVerdes_trio_act 2	Michael Feinstein
+./2014/20140921_MontereryJazzFest/T193.WAV	20140921_MontereryJazzFest_Interview	Michael Feinstein
+./2014/20140921_MontereryJazzFest/T194.WAV	20140921_MontereryJazzFest_Show	Michael Feinstein
+./2014/20140927_witchita symphony/T205.WAV	20140927_witchita symphony_Act 1	Michael Feinstein
+./2014/20140927_witchita symphony/T206.WAV	20140927_witchita symphony_Act 2	Michael Feinstein
+./2014/20140928_SonomaBigband/T207.WAV	20140928_SonomaBigband_rehearsal	Michael Feinstein
+./2014/20140928_SonomaBigband/T208.WAV	20140928_SonomaBigband_	Michael Feinstein
+./2014/20140928_SonomaBigband 2/T209.WAV	20140928_SonomaBigband_	Michael Feinstein
+./2014/20141012_StamfordCT_trio/T209.WAV	20141012_StamfordCT_trio	Michael Feinstein
+./2014/20141017_18_Ottawa/T210.WAV	20141016_Ottawa Symphony_Rehearsal1	Michael Feinstein
+./2014/20141017_18_Ottawa/T211.WAV	20141016_Ottawa Symphony_Rehearsal2	Michael Feinstein
+./2014/20141017_18_Ottawa/T212.WAV	20141016_Ottawa Symphony_Rehearsal3	Michael Feinstein
+./2014/20141017_18_Ottawa/T213.WAV	20141016_Ottawa Symphony_act 1	Michael Feinstein
+./2014/20141017_18_Ottawa/T214.WAV	20141016_Ottawa Symphony_act 2	Michael Feinstein
+./2014/20141017_18_Ottawa/T215.WAV	20141017_Ottawa Symphony_Act 1	Michael Feinstein
+./2014/20141017_18_Ottawa/T216.WAV	20141017_Ottawa Symphony_Act 2	Michael Feinstein
+./2014/20141017_18_Ottawa/T217.WAV	20141018_Ottawa Symphony_act1	Michael Feinstein
+./2014/20141017_18_Ottawa/T218.WAV	20141018_Ottawa Symphony_act2	Michael Feinstein
+./2014/20141101_Boston/T219.WAV	20141101_BostonMA	Michael Feinstein
+./2014/20141113_LasVegas/T220.WAV	20141113_LasVegasNV_Rehearsal1	Michael Feinstein
+./2014/20141113_LasVegas/T221.WAV	20141113_LasVegasNV_Rehearsal2	Michael Feinstein
+./2014/20141113_LasVegas/T222.WAV	20141113_LasVegasNV	Michael Feinstein
+./2014/20141121_ConcordNH_combo/T223.WAV	20141121_ConcordNH_combo	Michael Feinstein
+./2014/20141122_CarmelMFI_Event/T224.WAV	20141122_CarmelIN_MFI_Event_1	Michael Feinstein
+./2014/20141122_CarmelMFI_Event/T225.WAV	20141122_CarmelIN_MFI_Event_2	Michael Feinstein
+./2014/20141207_SFXmas_Boone/T226.WAV	20141207_SanFransiscoCA_Xmas_Boone_Act 1	Michael Feinstein and Debby Boone
+./2014/20141207_SFXmas_Boone/T227.WAV	20141207_SanFransiscoCA_Xmas_Boone_Act 2	Michael Feinstein and Debby Boone
+./2014/20141210_BostonPops/20141210_Act2pt1_T230.WAV	20141210_BostonPops_Act2pt1	Michael Feinstein
+./2014/20141210_BostonPops/20141210_Act2pt2_T231.WAV	20141210_BostonPops_Act2pt2	Michael Feinstein
+./2014/20141210_BostonPops/20141210_bostonpopsAct1_T229.WAV	20141210_bostonpops_Act1	Michael Feinstein
+./2014/20141210_BostonPops/20141210_rehearsal_T228.WAV	20141210_bostonpops_rehearsals	Michael Feinstein
+./2014/20141212_cerrtiotXmas_boone/T232.WAV	20141212_cerrtiosCA_Xmas_boone_rehearsal	Michael Feinstein and Debby Boone
+./2014/20141212_cerrtiotXmas_boone/T233.WAV	20141212_cerrtiosCA_Xmas_boone_rehearsal	Michael Feinstein and Debby Boone
+./2014/20141212_cerrtiotXmas_boone/T234.WAV	20141212_cerrtiosCA_Xmas_boone_act 1	Michael Feinstein and Debby Boone
+./2014/20141212_cerrtiotXmas_boone/T235.WAV	20141212_cerrtiosCA_Xmas_boone_act 2	Michael Feinstein and Debby Boone
+./2014/20141214_detroitcombo/T236.WAV	20141214_detroitMI_combo_Act 1	Michael Feinstein
+./2014/20141214_detroitcombo/T237.WAV	20141214_detroitMI_combo_Act 2	Michael Feinstein
+./2014/20141216_Birdland/T239.WAV	20141217_Birdland	Michael Feinstein
+./2014/20141216_Birdland/T240.WAV	20141218_Birdland	Michael Feinstein
+./2014/20141216_Birdland/T242.WAV	20141219_Birdland_Late	Michael Feinstein
+./2014/20141216_Birdland/T243.WAV	20141220_Birdland	Michael Feinstein
+./2014/20141216_Birdland/T244.WAV	20141220_Birdland_late	Michael Feinstein
+./2014/20141216_Birdland/T245.WAV	20141220_Birdland_late late	Michael Feinstein
+./2014/20141216_Birdland/T246.WAV	20141223_Birdland	Michael Feinstein
+./2014/20141216_Birdland/T248.WAV	20141225_Birdland	Michael Feinstein
+./2014/20141216_Birdland/T249.WAV	20141226_Birdland	Michael Feinstein
+./2014/20141216_Birdland/T250.WAV	20141226_Birdland_late	Michael Feinstein
+./2014/20141216_Birdland/T252.WAV	N/A	Michael Feinstein
+./2014/20141216_Birdland/T253.WAV	20141226_Birdland	Michael Feinstein
+./2014/20141216_Birdland/T254.WAV	20141227_Birdland	Michael Feinstein
+./2014/20141216_Birdland/T255.WAV	20141228_Birdland_late	Michael Feinstein
+./2014/20141216_Birdland/T256.WAV	20141228_Birdland	Michael Feinstein
+./2014/20141231_LasVegas/T261.WAV	20141231_LasVegasNV	Michael Feinstein
+./2015/20150103_wpb_pops/T263.WAV	20150103_WestpalmbeachFl_pops_Act 1	Michael Feinstein
+./2015/20150103_wpb_pops/T264 copy.WAV	20150103_WestpalmbeachFl_pops_copy_act 1	Michael Feinstein
+./2015/20150103_wpb_pops/T264.WAV	20150103_WestpalmbeachFL_pops_act 2	Michael Feinstein
+./2015/20150207_PSP/T265.WAV	20150207_PalmSpringCA_act 1	Michael Feinstein
+./2015/20150207_PSP/T266.WAV	20150207_PalmSpringCA_act 2	Michael Feinstein
+./2015/20150214_Sarasota/T268.WAV	20150214_SarasotaFl_act 1	Michael Feinstein
+./2015/20150214_Sarasota/T269.WAV	20150214_SarasotaFl_act 2	Michael Feinstein
+./2015/20150215_Naples/T270.WAV	20150215_NaplesFl_act 1	Michael Feinstein
+./2015/20150215_Naples/T271.WAV	20150215_NaplesFl_act 2	Michael Feinstein
+./2015/20150224_WPB_pops/T272.WAV	20150224_WestPalmBeachpops_act 1	Michael Feinstein
+./2015/20150224_WPB_pops/T273 copy.WAV	20150224_WestPalmBeachpops_copy_Act 1	Michael Feinstein
+./2015/20150224_WPB_pops/T273.WAV	20150224_WestPalmBeachpops_act 2	Michael Feinstein
+./2015/20150225_lakeland/T274.WAV	20150225_lakelandFl_rehearsal	Michael Feinstein
+./2015/20150225_lakeland/T275.WAV	20150225_lakelandFl_act 1	Michael Feinstein
+./2015/20150225_lakeland/T276.WAV	20150225_lakelandFl_act 2	Michael Feinstein
+./2015/20150307_StonybrookLE/T277.WAV	20150307_StonybrookNY_MFLE_act 1	Michael Feinstein and Linda Eder
+./2015/20150307_StonybrookLE/T278.WAV	20150307_StonybrookNY_MFLE_act 2	Michael Feinstein and Linda Eder
+./2015/20150314_Dodd Aud/T279.WAV	20150314_FredericksburgVA_act 1	Michael Feinstein
+./2015/20150314_Dodd Aud/T280.WAV	20150314_FredericksburgVA_act 2	Michael Feinstein
+./2015/20150320_MIA MF CE/T281.WAV	20150320_MiamiFL MF CE_rehearsal1	Micahel Feinstein and Christine Ebersole
+./2015/20150320_MIA MF CE/T282.WAV	20150320_MiamiFLMF CE_rehearsal2	Micahel Feinstein and Christine Ebersole
+./2015/20150320_MIA MF CE/T283.WAV	20150320_MiamiFLMF CE_rehearsal3	Micahel Feinstein and Christine Ebersole
+./2015/20150320_MIA MF CE/T284.WAV	20150320_MiamiFLMF CE_act1	Micahel Feinstein and Christine Ebersole
+./2015/20150320_MIA MF CE/T285.WAV	20150320_MiamiFLMF CE_act 2	Micahel Feinstein and Christine Ebersole
+./2015/20150322_Carmel MFMM/T286.WAV	20150322_CarmelIN MFMM_rehearsal1	Michael Feinstein and Marilyn Maye
+./2015/20150322_Carmel MFMM/T287.WAV	20150322_CarmelIN MFMM_rehearsal2	Michael Feinstein and Marilyn Maye
+./2015/20150322_Carmel MFMM/T288.WAV	20150322_CarmelIN MFMM_act1	Michael Feinstein and Marilyn Maye
+./2015/20150322_Carmel MFMM/T289.WAV	20150322_CarmelIN MFMM_act2	Michael Feinstein and Marilyn Maye
+./2015/20150330_WPB/T291.WAV	20150330_WestPalmBeachPops_rehearsal	Michael Feinstein
+./2015/20150330_WPB/T292.WAV	20150330_WestPalmBeachPops_act 1	Michael Feinstein
+./2015/20150330_WPB/T293 copy.WAV	20150330_WestPalmBeachPops_act 2	Michael Feinstein
+./2015/20150330_WPB/T293.WAV	20150330_WestPalmBeachPops_act 2	Michael Feinstein
+./2015/20150415_JALC/T301.WAV	20150415_JALC_NYC	Michael Feinstein
+./2015/20150416_JALC/T302.WAV	20150416_JALC_7PM_NYC	Michael Feinstein
+./2015/20150416_JALC/T303.WAV	20150416_JALC_9PM_NYC	Michael Feinstein
+./2015/20150418_LasVegas/T304.WAV	20150418_LasVegasNV_rehearsal	Michael Feinstein
+./2015/20150418_LasVegas/T305.WAV	20150418_LasVegasNV	Michael Feinstein
+./2015/20150425_SanDiegoCA/T306.WAV	20150425_SanDiegoCA_act1	Michael Feinstein
+./2015/20150425_SanDiegoCA/T307.WAV	20150425_SanDiegoCA_act2	Michael Feinstein
+./2015/20150507_FayettevilleAK/20150507_FayettevilleAK_T308.WAV	20150507_FayettevilleAK	Michael Feinstein
+./2015/20150509_OverlandParkKS/20150509_OverlandParkKS_T309.WAV	20150509_OverlandParkKS_act1	Michael Feinstein
+./2015/20150509_OverlandParkKS/20150509_OverlandParkKS_T310.WAV	20150509_OverlandParkKS_act2	Michael Feinstein
+./2015/20150510_ManahattaKS/T311.WAV	20150510_ManahattaKS_act1	Michael Feinstein
+./2015/20150510_ManahattaKS/T312.WAV	20150510_ManahattaKS_act2	Michael Feinstein
+./2015/20150513_JALC/T313.WAV	20150513_NewYorkNY_JALC	Michael Feinstein
+./2015/20150514_JALC/20150514_MF_JALC Act 1.WAV	20150514_NewYorkNY_7PM_JALC	Michael Feinstein
+./2015/20150514_JALC/T315.WAV	20150514_NewYorkNY_9PM_JALC	Michael Feinstein
+./2015/20150528_MidlandMI_combo/T322.WAV	20150528_MidlandMI_combo	Michael Feinstein
+./2015/20150529_Rochester/T323.WAV	20150529_RochesterNYSymphony_rehearsal	Michael Feinstein
+./2015/20150529_Rochester/T324.WAV	20150529_RochesterNYSymphony_act1	Michael Feinstein
+./2015/20150529_Rochester/T325.WAV	20150529_RochesterNYSymphony_act2	Michael Feinstein
+./2015/20150530_Rochester/20150530_rochesterAct1_T326.WAV	20150530_RochesterNYSymphny_Act1	Michael Feinstein
+./2015/20150530_Rochester/20150530_RochesterAct2_T327.WAV	20150530_RochesterNYSymphony_Act2	Michael Feinstein
+./2015/20150606_westburyNY/20150606_westburyNY_T328.WAV	20150606_westburyNY_N/A	Michael Feinstein
+./2015/20150606_westburyNY/20150606_westburyNY_T329.WAV	20150606_westburyNY	Michael Feinstein
+./2015/20150620_Pasasdenapops/20150620_Pasasdenapops_T330.WAV	20150620_Pasasdenapops_act1	Michael Feinstein
+./2015/20150620_Pasasdenapops/20150620_Pasasdenapops_T331.WAV	20150620_Pasasdenapops_act2	Michael Feinstein
+./2015/20150627_musicbythe lake/T332.WAV	20150627_WilliamsBayWI	Michael Feinstein
+./2015/20150718_cleveland/20150718_cleveland_T339.WAV	20150718_clevelandOH_act1	Michael Feinstein
+./2015/20150718_cleveland/20150718_cleveland_T340.WAV	20150718_clevelandOH_act2	Michael Feinstein
+./2015/20150725_CarmelIN/T341.WAV	20150725_CarmelIN_act1	Michael Feinstein
+./2015/20150725_CarmelIN/T342.WAV	/20150725_CarmelIN_N/A	Michael Feinstein
+./2015/20150725_CarmelIN/T343.WAV	20150725_CarmelIN_act2	Michael Feinstein
+./2015/20150801_pasadenapops/T345.WAV	20150731_pasadenapops_rehearsal1	Michael Feinstein
+./2015/20150801_pasadenapops/T346.WAV	20150801_pasadenapops_rehearsal2	Michael Feinstein
+./2015/20150801_pasadenapops/T347.WAV	20150801_pasadenapops_act1	Michael Feinstein
+./2015/20150801_pasadenapops/T348.WAV	20150801_pasadenapops_N/A	Michael Feinstein
+./2015/20150801_pasadenapops/T349.WAV	20150801_pasadenapops_act2	Michael Feinstein
+./2015/20150822_pasadeanpops/20150822_pasadenapops_Act1_T350.WAV	20150822_pasadeanpops_act1	Michael Feinstein
+./2015/20150822_pasadeanpops/20150822_pasadenapops_act2_T354.WAV	20150822_pasadeanpops_act2	Michael Feinstein
+./2015/20150822_pasadeanpops/T351.WAV	20150822_pasadeanpops_N/A	Michael Feinstein
+./2015/20150822_pasadeanpops/T352.WAV	20150822_pasadeanpops_N/A	Michael Feinstein
+./2015/20150822_pasadeanpops/T353.WAV	20150822_pasadeanpops_N/A	Michael Feinstein
+./2015/20150912_pasadenapops/T355.WAV	20150912_pasadenapops_act1	Michael Feinstein
+./2015/20150912_pasadenapops/T356.WAV	20150912_pasadenapops_act2	Michael Feinstein
+./2015/20150927_london/T357.WAV	20150927_london_act1	Michael Feinstein
+./2015/20150927_london/T359.WAV	20150927_london_act2	Michael Feinstein
+./2015/20151003_CarmelIN_Gala/T361.WAV	20151003_CarmelIN_Gala_speeches	Michael Feinstein
+./2015/20151003_CarmelIN_Gala/T362.WAV	20151003_CarmelIN_Gala	Michael Feinstein
+./2015/20151017_GalvenstonTXBB/T363.WAV	20151017_GalvenstonTX_rehearsal	Michael Feinstein
+./2015/20151017_GalvenstonTXBB/T364.WAV	20151017_GalvenstonTX_act1	Michael Feinstein
+./2015/20151017_GalvenstonTXBB/T365 copy.WAV	20151017_GalvenstonTX_copy_act1	Michael Feinstein
+./2015/20151017_GalvenstonTXBB/T365.WAV	20151017_GalvenstonTX_act2	Michael Feinstein
+./2015/20151022_Denver/T366.WAV	20151022_DenverCO_act1	Michael Feinstein
+./2015/20151022_Denver/T367.WAV	20151022_DenverCo_act2	Michael Feinstein
+./2015/20151024_Brooklyn/T368.WAV	20151024_BrooklynNY	Michael Feinstein
+./2015/20151203_ATL Symphony/T406 copy.WAV	20151203_AtlantaGASymphony_copy_act1	Michael Feinstein
+./2015/20151203_ATL Symphony/T406.WAV	20151203_AtlantaGASymphony_act1	Michael Feinstein
+./2015/20151203_ATL Symphony/T407 copy.WAV	20151203_AtlantaGASymphony_copy_act2	Michael Feinstein
+./2015/20151203_ATL Symphony/T407.WAV	20151203_AtlantaGASymphony_act2	Michael Feinstein
+./2015/20151205_ChicagoCombo/T408.WAV	20151205_ChicagoIL_Combo	Michael Feinstein
+./2015/20151211_StrathmoreBB/T409.WAV	20151211_StrathmoreMD_act1	Michael Feinstein
+./2015/20151211_StrathmoreBB/T410.WAV	20151211_StrathmoreMD_N/A	Michael Feinstein
+./2015/20151211_StrathmoreBB/T411.WAV	20151211_StrathmoreMD_act2	Michael Feinstein
+./2015/20151212_NJPAC/T413 copy.WAV	20151212_NewJersey_NJPAC_copy_act1	Michael Feinstein
+./2015/20151212_NJPAC/T413.WAV	20151212_NewJersey_NJPAC_act1	Michael Feinstein
+./2015/20151212_NJPAC/T414 copy.WAV	20151212_NewJersey_NJPAC_copy_act2	Michael Feinstein
+./2015/20151212_NJPAC/T414.WAV	20151212_NewJersey_NJPAC_act2	Michael Feinstein
+./2016/20160127_Kravis Pops/T416.WAV	20160127_WestPalmBeachFLPops_Act1	Michael Feinstein
+./2016/20160127_Kravis Pops/T417.WAV	20160127_WestPalmBeachFLPops_act2	Michael Feinstein
+./2016/20160129_OrlandoBB/T418.WAV	20160129_OrlandoFL_rehearsal1	Michael Feinstein
+./2016/20160129_OrlandoBB/T419.WAV	20160129_OrlandoFL_rehearsal2	Michael Feinstein
+./2016/20160129_OrlandoBB/T420.WAV	20160129_OrlandoFL	Michael Feinstein
+./2016/20160130_StPetePops/T421.WAV	20160130_StPetesburgFLPops_rehearsal1	Michael Feinstein
+./2016/20160130_StPetePops/T422.WAV	20160130_StPetesburgFLPops_rehearsal2	Michael Feinstein
+./2016/20160130_StPetePops/T423.WAV	20160130_StPetesburgFLPops_rehearsal3	Michael Feinstein
+./2016/20160130_StPetePops/T424 copy.WAV	20160130_StPetesburgFLPops_copy	Michael Feinstein
+./2016/20160130_StPetePops/T424.WAV	20160130_StPetesburgFLPops	Michael Feinstein
+./2016/20160206_LosAngelesCombo/T425.WAV	20160206_LosAngelesCA_Combo	Michael Feinstein
+./2016/20160218_Sarasota/T427.WAV	20160218_SarasotaFL_rehearsal1	Michael Feinstein
+./2016/20160218_Sarasota/T428.WAV	20160218_SarasotaFL_rehearsal2	Michael Feinstein
+./2016/20160218_Sarasota/T429.WAV	20160218_SarasotaFL_rehearsal3	Michael Feinstein
+./2016/20160218_Sarasota/T430.WAV	20160218_SarasotaFL_act1	Michael Feinstein
+./2016/20160218_Sarasota/T431.WAV	20160218_SarasotaFL_act2	Michael Feinstein
+./2016/20160219_20_Naples/T432.WAV	20160219_NaplesFL_act1	Michael Feinstein
+./2016/20160219_20_Naples/T433.WAV	20160219_NaplesFL_act2	Michael Feinstein
+./2016/20160219_20_Naples/T434.WAV	20160220_NaplesFL_act1	Michael Feinstein
+./2016/20160219_20_Naples/T435.WAV	20160220_NaplesFL_act2	Michael Feinstein
+./2016/20160223_WPB/20160223_A1_T436.WAV	20160223_WestPalmBeachFL_act1_copy	Michael Feinstein
+./2016/20160223_WPB/20160223_ATC2_437.WAV	20160223_WestPalmBeachFL_act2_copy	Michael Feinstein
+./2016/20160223_WPB/T436.WAV	20160223_WestPalmBeachFL_act1	Michael Feinstein
+./2016/20160223_WPB/T437.WAV	20160223_WestPalmBeachFL_act2	Michael Feinstein
+./2016/20160227_ScottsdaleAZ/T438.WAV	20160227_ScottsdaleAZ_rehearsal	Michael Feinstein
+./2016/20160227_ScottsdaleAZ/T439.WAV	20160227_ScottsdaleAZ_3PM_act1	Michael Feinstein
+./2016/20160227_ScottsdaleAZ/T440.WAV	20160227_ScottsdaleAZ_N/A	Michael Feinstein
+./2016/20160227_ScottsdaleAZ/T441.WAV	20160227_ScottsdaleAZ_3PM_act2	Michael Feinstein
+./2016/20160227_ScottsdaleAZ/T442.WAV	20160227_ScottsdaleAZ_8PM_act1	Michael Feinstein
+./2016/20160227_ScottsdaleAZ/T443.WAV	20160227_ScottsdaleAZ_8PM_act2	Michael Feinstein
+./2016/20160303_KeyLargoBB/T444.WAV	20160303_KeyLargoFL_rehearsal1	Michael Feinstein
+./2016/20160303_KeyLargoBB/T445.WAV	20160303_KeyLargoFL_rehearsal2	Michael Feinstein
+./2016/20160303_KeyLargoBB/T446.WAV	20160303_KeyLargoFL	Michael Feinstein
+./2016/20160305_CarmelBB/T447.WAV	20160305_CarmelIN_act1	Michael Feinstein
+./2016/20160305_CarmelBB/T448.WAV	20160305_CarmelIN_act2	Michael Feinstein
+./2016/20160312_13_PSP/T449.WAV	20160312_PalmSpringsCA_rehearsal1	Michael Feinstein
+./2016/20160312_13_PSP/T450.WAV	20160312_PalmSpringsCA_rehearsal2	Michael Feinstein
+./2016/20160312_13_PSP/T451.WAV	20160312_PalmSpringsCA_act1	Michael Feinstein
+./2016/20160312_13_PSP/T452.WAV	20160312_PalmSpringsCA_act2	Michael Feinstein
+./2016/20160312_13_PSP/T453.WAV	20160313_PalmSpringCA_act1	Michael Feinstein
+./2016/20160312_13_PSP/T454.WAV	20160313_PalmSpringCA_act2	Michael Feinstein
+./2016/20160318_BBCLondon/T455.WAV	20160318_BBCLondon_act1	Michael Feinstein
+./2016/20160318_BBCLondon/T456.WAV	20160318_BBCLondon_act2	Michael Feinstein
+./2016/20160319_PalmBeachTrio/T457 copy.WAV	20160319_PalmBeachFL_Trio_copy	Michael Feinstein
+./2016/20160319_PalmBeachTrio/T457.WAV	20160319_PalmBeachFL_Trio	Michael Feinstein
+./2016/20160330_WPB/T458.WAV	20160330_WestPalmBeachFL_act1	Michael Feinstein
+./2016/20160330_WPB/T459.WAV	20160330_WestPalmBeachFL_act2	Michael Feinstein
+./2016/20160409_TillesBB/T460.WAV	20160409_GreenvaleNY_act1	Michael Feinstein
+./2016/20160409_TillesBB/T461.WAV	20160409_GreenvaleNY_act2	Michael Feinstein
+./2016/20160413_14_JALC/T462.WAV	20160413_NewYorkNY_7PM_JALC	Michael Feinstein
+./2016/20160413_14_JALC/T463.WAV	20160414_NewYorkNY_7PM_JALC	Michael Feinstein
+./2016/20160413_14_JALC/T464.WAV	20160414_NewYorkNY_9PM_JALC	Michael Feinstein
+./2016/20160429_Washington DC/T465 copy.WAV	20160429_WashingtonDC_copy	Michael Feinstein
+./2016/20160429_Washington DC/T465.WAV	20160429_WashingtonDC	Michael Feinstein
+./2016/20160506_Toronto/T466.WAV	20160506_TorontoON	Michael Feinstein
+./2016/20160514_CarmelCA_trio/T467.WAV	20160514_CarmelCA_trio	Michael Feinstein
+./2016/20160604_MoheaganSunTrio/T468.WAV	20160604_UncasvilleCT_Trio	Michael Feinstein
+./2016/20160608_JALC/T469.WAV	20160608_NewYorkNY_7PM_JALC	Michael Feinstein
+./2016/20160609_JALC_7pm/T470.WAV	20160609_NewYorkNY_7PM_JALC	Michael Feinstein
+./2016/20160609_JALC_9pm/T471.WAV	20160609_NewYorkNY_9PM_JALC	Michael Feinstein
+./2016/20160609_Public Liza/T472.WAV	20160609_NewYorkNY_Public_Liza	Michael Feinstien and Liza Minnelli
+./2016/20160611_WesterlyRI_Trio/T473.WAV	20160611_WesterlyRI_Trio	Michael Feinstein
+./2016/20160618_Pasadena/20160618_PasadenaAct1.WAV	20160618_Pasadenapops_act1_copy	Michael Feinstein
+./2016/20160618_Pasadena/20160618_PasadenaAct2.WAV	20160618_Pasadenapops_act2_copy	Michael Feinstein
+./2016/20160618_Pasadena/T474.WAV	20160618_Pasadenapops_act1	Michael Feinstein
+./2016/20160618_Pasadena/T475.WAV	20160618_Pasadenapops_act2	Michael Feinstein
+./2016/20160730_Pasadena/T476 copy.WAV	20160730_Pasadenapops_act1_copy	Michael Feinstein
+./2016/20160730_Pasadena/T476.WAV	20160730_Pasadenapops_act1	Michael Feinstein
+./2016/20160730_Pasadena/T477 copy.WAV	20160730_Pasadenapops_act2_copy	Michael Feinstein
+./2016/20160730_Pasadena/T477.WAV	20160730_Pasadenapops_act2	Michael Feinstein
+./2016/20160731_Cleveland/T478 copy.WAV	20160731_ClevelandOH_act1_copy	Michael Feinstein
+./2016/20160731_Cleveland/T478.WAV	20160731_ClevelandOH_act1	Michael Feinstein
+./2016/20160731_Cleveland/T479 copy.WAV	20160731_ClevelandOH_act2_copy	Michael Feinstein
+./2016/20160731_Cleveland/T479.WAV	20160731_Cleveland_act2	Michael Feinstein
+./2016/20160809_DeerValleyUTSymphony/T480.WAV	20160809_DeerValleyUT_Symphony_act1	Michael Feinstein
+./2016/20160809_DeerValleyUTSymphony/T481.WAV	20160809_DeerValleyUT_Symphony_act2	Michael Feinstein
+./2016/20160820_pasadena/20160820_PasadenaAct1.WAV	20160820_pasadenaPops_Act1_copy	Michael Feinstein
+./2016/20160820_pasadena/20160820_PasadenaAct2.WAV	20160820_PasadenaPops_Act2_copy	Michael Feinstein
+./2016/20160820_pasadena/T482.WAV	20160820_pasadenaPops_act1	Michael Feinstein
+./2016/20160820_pasadena/T483.WAV	20160820_pasadenaPops_act2	Michael Feinstein
+./2016/20160902_Machinak Island_trio/T484.WAV	20160902_MachinakIslandMI_trio	Michael Feinstein
+./2016/20160903_BayfieldWI_trio/T485.WAV	20160903_BayfieldWI_trio_act1	Michael Feinstein
+./2016/20160903_BayfieldWI_trio/T486.WAV	20160903_BayfieldWI_trio_act2	Michael Feinstein
+./2016/20160910_Pasadena Pops /rehearsal/T487.WAV	20160910_Pasadena Pops /rehearsal1	Michael Feinstein
+./2016/20160910_Pasadena Pops /rehearsal/T488.WAV	20160910_Pasadena Pops /rehearsal2	Michael Feinstein
+./2016/20160910_Pasadena Pops /rehearsal/T489.WAV	20160910_Pasadena Pops /rehearsal3	Michael Feinstein
+./2016/20160910_Pasadena Pops /rehearsal/T490.WAV	20160910_Pasadena Pops /rehearsal4	Michael Feinstein
+./2016/20160910_Pasadena Pops /rehearsal/T491.WAV	20160910_Pasadena Pops /rehearsal5	Michael Feinstein
+./2016/20160910_Pasadena Pops /rehearsal/T492.WAV	20160910_Pasadena Pops /rehearsal6	Michael Feinstein
+./2016/20160910_Pasadena Pops /rehearsal/T493.WAV	20160910_Pasadena Pops /rehearsal7	Michael Feinstein
+./2016/20160910_Pasadena Pops /rehearsal/T494.WAV	20160910_Pasadena Pops /rehearsal8	Michael Feinstein
+./2016/20160910_Pasadena Pops /rehearsal/T495.WAV	20160910_Pasadena Pops /rehearsal8	Michael Feinstein
+./2016/20160916_Orlandotrio/T496.WAV	20160916_OrlandoFL_trio	Michael Feinstein
+./2016/20160923_24_pittsburghTrio/T497.WAV	20160923_24_pittsburghPA_Trio_rehearsal1	Michael Feinstein
+./2016/20160923_24_pittsburghTrio/T498.WAV	20160923_24_pittsburghPA_Trio_rehearsal2	Michael Feinstein
+./2016/20160923_24_pittsburghTrio/T499.WAV	20160923_24_pittsburghPA_Trio_rehearsal3	Michael Feinstein
+./2016/20160923_24_pittsburghTrio/T500.WAV	20160923_pittsburghPA_3PM_trio	Michael Feinstein
+./2016/20160923_24_pittsburghTrio/T501.WAV	20160923_24_pittsburghPA_Trio_rehearsal4	Michael Feinstein
+./2016/20160923_24_pittsburghTrio/T502.WAV	20160923_pittsburghPA_8PM_trio	Michael Feinstein
+./2016/20160923_24_pittsburghTrio/T503.WAV	20160924_pittsburghPA_3PM_trio	Michael Feinstein
+./2016/20160923_24_pittsburghTrio/T504.WAV	20160924_pittsburghPA_8PM_trio	Michael Feinstein
+./2016/20161008_SanDiego Symphony/T506.WAV	20161008_SanDiegoCA_Symphony	Michael Feinstein
+./2016/20161015_Carmel Gala/20161015_Carmel Gala Concert/T522.WAV	20161015_CarmelIN_GalaConcert	Michael Feinstein
+./2016/20161015_Carmel Gala/20161015_Carmel Gala Rehearsal/T507.WAV	20161015_CarmelIN_ Gala_Rehearsal1	Michael Feinstein
+./2016/20161015_Carmel Gala/20161015_Carmel Gala Rehearsal/T508.WAV	20161015_CarmelIN_ Gala_Rehearsal2	Michael Feinstein
+./2016/20161015_Carmel Gala/20161015_Carmel Gala Rehearsal/T509.WAV	20161015_CarmelIN_ Gala_Rehearsal3	Michael Feinstein
+./2016/20161015_Carmel Gala/20161015_Carmel Gala Rehearsal/T510.WAV	20161015_CarmelIN_ Gala_Rehearsal4	Michael Feinstein
+./2016/20161015_Carmel Gala/20161015_Carmel Gala Rehearsal/T511.WAV	20161015_CarmelIN_ Gala_Rehearsal5	Michael Feinstein
+./2016/20161015_Carmel Gala/20161015_Carmel Gala Rehearsal/T512.WAV	20161015_CarmelIN_ Gala_Rehearsal6	Michael Feinstein
+./2016/20161015_Carmel Gala/20161015_Carmel Gala Rehearsal/T513.WAV	20161015_CarmelIN_ Gala_Rehearsal7	Michael Feinstein
+./2016/20161015_Carmel Gala/20161015_Carmel Gala Rehearsal/T514.WAV	20161015_CarmelIN_ Gala_Rehearsal8	Michael Feinstein
+./2016/20161015_Carmel Gala/20161015_Carmel Gala Rehearsal/T515.WAV	20161015_CarmelIN_ Gala_Rehearsal9	Michael Feinstein
+./2016/20161015_Carmel Gala/20161015_Carmel Gala Rehearsal/T516.WAV	20161015_CarmelIN_ Gala_Rehearsal10	Michael Feinstein
+./2016/20161015_Carmel Gala/20161015_Carmel Gala Rehearsal/T517.WAV	20161015_CarmelIN_ Gala_Rehearsal11	Michael Feinstein
+./2016/20161015_Carmel Gala/20161015_Carmel Gala Rehearsal/T518.WAV	20161015_CarmelIN_ Gala_Rehearsal12	Michael Feinstein
+./2016/20161015_Carmel Gala/20161015_Carmel Gala Rehearsal/T519.WAV	20161015_CarmelIN_ Gala_Rehearsal13	Michael Feinstein
+./2016/20161015_Carmel Gala/20161015_Carmel Gala Rehearsal/T520.WAV	20161015_CarmelIN_ Gala_Rehearsal14	Michael Feinstein
+./2016/20161015_Carmel Gala/20161015_Carmel Gala Rehearsal/T521.WAV	20161015_CarmelIN_ Gala_Rehearsal15	Michael Feinstein
+./2016/20161017_LangLang Gala/T523.WAV	20161017_NewYorkNY_LangLang Gala1	Michael Feinstein
+./2016/20161017_LangLang Gala/T524.WAV	20161017_NewYorkNY_LangLang Gala2	Michael Feinstein
+./2016/20161017_LangLang Gala/T525.WAV	20161017_NewYorkNY_LangLang Gala3	Michael Feinstein
+./2016/20161022_Coluburn Event Los Angeles CA/reheasrsal/T526.WAV	20161022_LosAngelesCA_ColuburnEvent	Michael Feinstein
+./2016/20161022_Coluburn Event Los Angeles CA/reheasrsal/T527.WAV	20161022_Los Angeles CAColuburnEvent_reheasrsal1	Michael Feinstein
+./2016/20161022_Coluburn Event Los Angeles CA/reheasrsal/T528.WAV	20161022_Los Angeles CAColuburnEvent_reheasrsal2	Michael Feinstein
+./2016/20161022_Coluburn Event Los Angeles CA/reheasrsal/T529.WAV	20161022_Los Angeles CAColuburnEvent_reheasrsal3	Michael Feinstein
+./2016/20161022_Coluburn Event Los Angeles CA/reheasrsal/T530.WAV	20161022_Los Angeles CAColuburnEvent_reheasrsal4	Michael Feinstein
+./2016/20161022_Coluburn Event Los Angeles CA/reheasrsal/T531.WAV	20161022_Los Angeles CAColuburnEvent_reheasrsal5	Michael Feinstein
+./2016/20161022_Coluburn Event Los Angeles CA/reheasrsal/T532.WAV	20161022_Los Angeles CAColuburnEvent_reheasrsal6	Michael Feinstein
+./2016/20161022_Coluburn Event Los Angeles CA/T533.WAV	20161022_Los Angeles CAColuburnEvent_reheasrsal7	Michael Feinstein
+./2016/20161028_morristownNJTrio/T536.WAV	20161028_morristownNJ_trio_act1	Michael Feinstein
+./2016/20161028_morristownNJTrio/T537.WAV	20161028_morristownNJ_trio_act2	Michael Feinstein
+./2016/20161029_BeverlyMA_trio/T538.WAV	20161029_BeverlyMA_trio	Michael Feinstein
+./2016/20161030_Red Bank Trio/T539.WAV	20161030_RedBankNJ_trio_act1	Michael Feinstein
+./2016/20161030_Red Bank Trio/T540.WAV	20161030_RedBankNJ_trio_act2	Michael Feinstein
+./2016/20161109_MedfordOR_trio/T541.WAV	20161109_MedfordOR_trio_act1	Michael Feinstein
+./2016/20161109_MedfordOR_trio/T542.WAV	20161109_MedfordOR_trio_act2	Michael Feinstein
+./2016/20161110_EugeneOR_Trio/T543.WAV	20161110_EugeneOR_trio	Michael Feinstein
+./2016/20161112_Rohnert ParkCA_trio/T544.WAV	20161112_Rohnert ParkCA_trio_rehearsal1	Michael Feinstein
+./2016/20161112_Rohnert ParkCA_trio/T545.WAV	20161112_Rohnert ParkCA_trio_act1	Michael Feinstein
+./2016/20161112_Rohnert ParkCA_trio/T546.WAV	20161112_Rohnert ParkCA_trio_act2pt1	Michael Feinstein
+./2016/20161112_Rohnert ParkCA_trio/T547.WAV	20161112_Rohnert ParkCA_trio_act2pt2	Michael Feinstein
+./2016/20161113_FolsomCA Trio/T548.WAV	20161113_FolsomCA Trio_act1	Michael Feinstein
+./2016/20161113_FolsomCA Trio/T549.WAV	20161113_FolsomCA Trio_act2	Michael Feinstein
+./2016/20161203_Scottsdale Trio/T550.WAV	20161203_ScottsdaleAZ_Trio_rehearsal1	Michael Feinstein
+./2016/20161203_Scottsdale Trio/T551.WAV	20161203_ScottsdaleAZ_ Trio_rehearsal2	Michael Feinstein
+./2016/20161203_Scottsdale Trio/T552.WAV	20161203_ScottsdaleAZ Trio	Michael Feinstein
+./2017/20170202_04_Nashville Symphony/20170202_Nashville/T553.WAV	20170202_NashvilleTNSymphony_rehearsal1	Michael Feinstein
+./2017/20170202_04_Nashville Symphony/20170202_Nashville/T554.WAV	20170202_NashvilleTNSymphony_rehearsal2	Michael Feinstein
+./2017/20170202_04_Nashville Symphony/20170202_Nashville/T555.WAV	20170202_NashvilleTNSymphony_rehearsal3	Michael Feinstein
+./2017/20170202_04_Nashville Symphony/20170202_Nashville/T556.WAV	20170202_NashvilleTNSymphony_rehearsal4	Michael Feinstein
+./2017/20170202_04_Nashville Symphony/20170202_Nashville/T557.WAV	20170202_NashvilleTNSymphony_act1	Michael Feinstein
+./2017/20170202_04_Nashville Symphony/20170202_Nashville/T558.WAV	20170202_NashvilleTNSymphony_act2	Michael Feinstein
+./2017/20170202_04_Nashville Symphony/20170203_Nashville/T559.WAV	20170203_NashvilleTNSymphony_act1	Michael Feinstein
+./2017/20170202_04_Nashville Symphony/20170203_Nashville/T560.WAV	20170203_NashvilleTNSymphony_act2	Michael Feinstein
+./2017/20170202_04_Nashville Symphony/20170204_Nashville/T561.WAV	20170204_NashvilleTNSymphony_act1	Michael Feinstein
+./2017/20170202_04_Nashville Symphony/20170204_Nashville/T562.WAV	20170204_NashvilleTNSymphony_act2	Michael Feinstein
+./2017/20170211_Kravis Gala/20170210_Kravis Rehearsal/T563.WAV	20170210_WestpalmBeachFL_Kravispops_rehearsal1	Michael Feinstein
+./2017/20170211_Kravis Gala/20170210_Kravis Rehearsal/T564.WAV	20170210_WestpalmBeachFL_Kravispops_rehearsal2	Michael Feinstein
+./2017/20170211_Kravis Gala/20170210_Kravis Rehearsal/T565.WAV	20170210_WestpalmBeachFL_Kravispops_rehearsal3	Michael Feinstein
+./2017/20170211_Kravis Gala/20170210_Kravis Rehearsal/T566.WAV	20170210_WestpalmBeachFL_Kravispops_rehearsal4	Michael Feinstein
+./2017/20170211_Kravis Gala/20170210_Kravis Rehearsal/T567.WAV	20170210_WestpalmBeachFL_Kravispops_rehearsal5	Michael Feinstein
+./2017/20170211_Kravis Gala/20170210_Kravis Rehearsal/T568.WAV	20170210_WestpalmBeachFL_Kravispops_rehearsal6	Michael Feinstein
+./2017/20170211_Kravis Gala/20170211_Kravis Gala_T571.WAV	20170211_WestpalmBeachFL_Kravis Gala	Michael Feinstein
+./2017/20170211_Kravis Gala/20170211_Kravis Rehearsal_T569.WAV	20170211_WestpalmBeachFL_Kravispops_rehearsal1	Michael Feinstein
+./2017/20170211_Kravis Gala/20170211_Kravis Rehearsal_T570.WAV	20170211_WestpalmBeachFL_Kravispop_rehearsal2	Michael Feinstein
+./2017/20170219_Kravis Pops/T572.WAV	20170219_WestpalmBeach_Kravis Pops_rehearsal1	Michael Feinstein
+./2017/20170219_Kravis Pops/T573.WAV	20170219_WestpalmBeach_Kravis Pops_rehearsal2	Michael Feinstein
+./2017/20170219_Kravis Pops/T574.WAV	20170219_WestpalmBeach_Kravis Pops_rehearsal3	Michael Feinstein
+./2017/20170219_Kravis Pops/T575.WAV	20170219_WestpalmBeach_Kravis Pops_rehearsal4	Michael Feinstein
+./2017/20170219_Kravis Pops/T576.WAV	20170219_WestpalmBeach_Kravis Pops_rehearsal5	Michael Feinstein
+./2017/20170219_Kravis Pops/T577.WAV	20170219_WestpalmBeachFL_Kravis Pops_rehearsal6	Michael Feinstein
+./2017/20170219_Kravis Pops/T578.WAV	20170219_WestpalmBeachFL_Kravis Pops_rehearsal7	Michael Feinstein
+./2017/20170219_Kravis Pops/T579.WAV	20170219_WestpalmBeachFL_Kravis Pops_act1	Michael Feinstein
+./2017/20170219_Kravis Pops/T580.WAV	20170219_WestpalmBeachFL_Kravis Pops_act2	Michael Feinstein
+./2017/20170225_Palm Desert Big Band/T584.WAV	20170225_PalmDesertCA_Big Band_act1	Michael Feinstein
+./2017/20170225_Palm Desert Big Band/T585.WAV	20170225_PalmDesertCA_Big Band_act2	Michael Feinstein
+./2017/20170412_Kravis Pops/20170412_Kravis Pops Act 1/1001.WAV	20170412_WestPalmBeachFL_Kravis Pops_act1	Michael Feinstein
+./2017/20170412_Kravis Pops/20170412_Kravis Pops Act 2/1002.WAV	20170412_WestPalmBeachFL_Kravis Pops_act2	Michael Feinstein
+./2017/20170706_Interlochen/1001.WAV	20170706_InterlochenMI_act1	Michael Feinstein
+./2017/20170706_Interlochen/1004.WAV	20170706_InterlochenMI_act2	Michael Feinstein
+./2017/20170707_Atlanta/1003.WAV	20170707_AtlantaGA	Michael Feinstein

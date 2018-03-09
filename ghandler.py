@@ -34,7 +34,7 @@ def insert_row(rowlist, rowdict, rownum, sh):
     for field in rowlist:
         cl.append(rowdict[field])
     for idx, c in enumerate(cl):
-            cell_list[idx].value = c
+            cell_list[idx].value = c.decode('utf-8', 'ignore')
     sh.update_cells(cell_list)
 
 def main():

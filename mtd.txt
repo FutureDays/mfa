@@ -1,0 +1,13 @@
+;FFMETADATA1
+IARL=0
+originator_reference=USInnSH-D163C n/a165325269541353
+title=DHP_Feinstein
+comment=0 Production Master. 50000000002671_Dec-22-2009_DHP_01_prod
+encoded_by=Memnon Archiving Services Inc.
+date=2017:08:22
+coding_history=A\=PCM,F\=44100,W\=16,T\=Adapter: 1  ID: 1  LUN: 0 - TSSTcorpDVD-ROM SH-D163C\;SN\
+A\=PCM, F\=44100, W\=16, M\=stereo, T\=NoaMediaButler Lib\;1.0.0.41\;D/D\
+\
+
+time_reference=0
+encoder=Lavf57.71.100

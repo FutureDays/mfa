@@ -25,6 +25,19 @@ def make_rowdict(sh):
         rd[v] = ''
     return rd
 
+def get_row(sh):
+    '''
+    gets row values from sheet argument)
+    '''
+    vals = sh.row_values(1)
+    return vals
+
+def get_column(column):
+    '''
+    returns list of column values for supplied column letter
+    '''
+
+
 def insert_row(rowlist, rowdict, rownum, sh):
     '''
     inserts a row based on row1 names in rowlist
@@ -42,8 +55,9 @@ def main():
     do the things
     '''
     gc = authorize()
-    sh = gc.open("mfa_descriptiveMetadata").sheet1
-    rd = make_rowdict(sh)
+    sh = gc.open("MichaelFeinsteinArchives-Catalog").sheet1
+    row = get_row(sh)
+    rd = make_rowdict(row)
     print(rd)
 
 if __name__ == '__main__':

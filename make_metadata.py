@@ -96,8 +96,8 @@ def make_nameroles(title, rd):
     nameroles = dotdict({})
     nr = ["a","b","c","d","e","f","g","h","i","j","k","l"]
     count = 0
-    instr = False
     for n in names:
+        instr = False
         n = n.strip()
         nmbr = nr[count]
         count = count+1
@@ -144,8 +144,42 @@ def make_nameroles(title, rd):
         elif "solo" in nameroles[nmbr].role or "Solo" in nameroles[nmbr].role:
             nameroles[nmbr].role = "prf"
             instr = "piano"
+        elif not nameroles[nmbr].role:
+            nameroles[nmbr].role = "prf"
 
     return nameroles, instr
+
+def process(args, filefp, rObj, g):
+    '''
+    runs a single file through the process
+    '''
+    print(filefp)
+    thefile = make_thefile(filefp, args)
+    output = export_ffmtd(thefile)
+    ffout = output
+    title = import_ffmtd()
+    piano = False
+    if title and not title == "0":
+        nrs, piano = make_nameroles(title, rObj.rd)
+    elif title == "0":
+        title = "Untitled"
+        nrs = {}
+    else:
+        title = "Untitled"
+        nrs = {}
+    #make_names(nrs)
+    rObj.rd.nameroles = json.dumps(nrs)
+    print(rObj.rd.nameroles)
+    if piano:
+        rObj.rd.note = piano
+    elements = thefile.fname.split('_')
+    rObj.rd.placeTerm = elements[2].replace('-'," ")
+    rObj.rd.dateIssued = daterizer(elements[1])
+    rObj.rd.language = 'eng'
+    rObj.rd.title = rObj.rd.dateIssued + " - " + rObj.rd.placeTerm
+    rObj.rd.identifier = elements[0]
+    rObj.rd.filename = thefile.fname
+    g.insert_row(rObj.rl, rObj.rd, rObj.row, rObj.sh)
 
 def main():
     '''
@@ -153,44 +187,26 @@ def main():
     extract bwf metadata
     write xml to file
     '''
-    args = dotdict({})
-    args = config(args)
-    gc = g.authorize()
-    sh = gc.open("mfa_descriptiveMetadata").sheet1
-    rl = sh.row_values(1)
-    rd = dotdict(g.make_rowdict(sh))
-    offset = 2
-    row = 2
-    for dirs, subdirs, files in os.walk(args.dir):
-        for f in files:
-            filefp = os.path.join(dirs, f)
-            print(filefp)
-            thefile = make_thefile(filefp, args)
-            output = export_ffmtd(thefile)
-            ffout = output
-            title = import_ffmtd()
-            if title and not title == "0":
-                nrs, piano = make_nameroles(title, rd)
-            elif title == "0":
-                title = "Untitled"
-                nrs = {}
-            else:
-                title = "Untitled"
-                nrs = {}
-            #make_names(nrs)
-            rd.nameroles = json.dumps(nrs)
-            if piano:
-                rd.note = piano
-            elements = thefile.fname.split('_')
-            rd.placeTerm = elements[2].replace('-'," ")
-            rd.dateIssued = daterizer(elements[1])
-            rd.language = 'eng'
-            rd.title = rd.dateIssued + " - " + rd.placeTerm
-            rd.identifier = elements[0]
-            rd.filename = thefile.fname
-            g.insert_row(rl, rd, row, sh)
-            row = row + 1
-            #foo = raw_input("eh")
+    #args = dotdict({})
+    #args = config(args)
+    args = init_args_cli()
+    rObj = dotdict({})
+    rObj.gc = g.authorize()
+    rObj.sh = rObj.gc.open("mfa_descriptiveMetadata").sheet1
+    rObj.rl = rObj.sh.row_values(1)
+    rObj.rd = dotdict(g.make_rowdict(rObj.sh))
+    rObj.offset = 2
+    rObj.row = 2
+    if os.path.isfile(args.dir):
+        filefp = args.dir
+        process(args, filefp, rObj, g)
+    elif os.path.isdir(args.dir):
+        for dirs, subdirs, files in os.walk(args.dir):
+            for f in files:
+                filefp = os.path.join(dirs, f)
+                process(args, filefp, rObj, g)
+                rObj.row = rObj.row + 1
+                #foo = raw_input("eh")
 
 
 

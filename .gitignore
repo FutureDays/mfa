@@ -6,3 +6,5 @@ mtd/converter-outs/
 mtd/soup_outs/
 mtd/converter-indvxml2mods-outs/
 client_secret.json
+credentials.json
+*invoice*

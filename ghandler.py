@@ -10,7 +10,7 @@ def authorize():
     '''
     conenct to google sheets api
     '''
-    scope = ['https://spreadsheets.google.com/feeds']
+    scope = ['https://spreadsheets.google.com/feeds','https://www.googleapis.com/auth/spreadsheets','https://www.googleapis.com/auth/drive.file','https://www.googleapis.com/auth/drive']
     credentials = ServiceAccountCredentials.from_json_keyfile_name('client_secret.json', scope)
     gc = gspread.authorize(credentials)
     return gc
@@ -25,18 +25,25 @@ def make_rowdict(sh):
         rd[v] = ''
     return rd
 
-def get_row(sh):
+def get_row_values(worksheet):
     '''
-    gets row values from sheet argument)
+    gets row values from sheet argument
     '''
-    vals = sh.row_values(1)
+    vals = worksheet.row_values(1)
     return vals
 
-def get_column(column):
+def update_cell_value(cell, value, worksheet):
     '''
-    returns list of column values for supplied column letter
+    updates the value of a cell
     '''
+    worksheet.update_acell(cell, value)
 
+def find_cell(stringquery, worksheet):
+    '''
+    finds a cell containing stringquery
+    '''
+    cell = worksheet.find(stringquery)
+    return cell
 
 def insert_row(rowlist, rowdict, rownum, sh):
     '''
@@ -55,10 +62,12 @@ def main():
     do the things
     '''
     gc = authorize()
-    sh = gc.open("MichaelFeinsteinArchives-Catalog").sheet1
-    row = get_row(sh)
-    rd = make_rowdict(row)
-    print(rd)
+    spreadsheet = gc.open_by_url("https://docs.google.com/spreadsheets/d/1R7cYjCFdpwTbWYouUNOa_E72kJ9B8fJfeO6MEHiRZ4M/edit#gid=0")
+    worksheet = spreadsheet.worksheet("catalog")
+    #row = get_row_values(worksheet)
+    #update_cell_value('M2',worksheet)
+    thecell = find_cell('50000000000000',worksheet)
+    print(thecell.row)
 
 if __name__ == '__main__':
     main()

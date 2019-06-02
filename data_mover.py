@@ -149,7 +149,7 @@ def moveDropboxToTraffic(args):
             output = "/root/Dropbox/MF archival audio/20170225_PalmDesertAct2_T585.mp3: up to date"
             outList = output.split(":")
             status = outList[1].lstrip()
-            if status = "up to date":
+            if status == "up to date":
                 #rsync
                 print("ready to move file " + f)
             else:

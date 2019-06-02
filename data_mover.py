@@ -153,8 +153,7 @@ def moveDropboxToTraffic(args):
                 outList = output.split(":")
                 status = outList[1].lstrip()
                 if status == "up to date":
-                    #rsync
-                    print('rsync -av --progress "' + fullpath + '" ' + args.traffic)
+                    subprocess.check_output('rsync -av --progress "' + fullpath + '" ' + args.traffic)
                 else:
                     print("still copying " + outList[0])
     '''with cd(args.Dropbox):

@@ -146,7 +146,7 @@ def moveDropboxToTraffic(args):
         for f in files:
             if not "." in f:
                 continue
-            elif not ".tmp" in f:
+            elif not ".tmp" in f and not f.startswith("."):
                 fullpath = os.path.join(dirs,f)
                 #output = subprocess.check_output('dropbox filestatus "' + fullpath + '"' )
                 output = "/root/Dropbox/MF archival audio/20170225_PalmDesertAct2_T585.mp3: up to date"

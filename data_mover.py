@@ -144,16 +144,19 @@ def moveDropboxToTraffic(args):
     '''
     for dirs, subdirs, files in os.walk(args.Dropbox):
         for f in files:
-            fullpath = os.path.join(dirs,f)
-            #output = subprocess.check_output('dropbox filestatus "' + fullpath + '"' )
-            output = "/root/Dropbox/MF archival audio/20170225_PalmDesertAct2_T585.mp3: up to date"
-            outList = output.split(":")
-            status = outList[1].lstrip()
-            if status == "up to date":
-                #rsync
-                print("ready to move file " + f)
-            else:
-                print("still copying " + outList[0])
+            if not "." in f:
+                continue
+            elif not ".tmp" in f:
+                fullpath = os.path.join(dirs,f)
+                #output = subprocess.check_output('dropbox filestatus "' + fullpath + '"' )
+                output = "/root/Dropbox/MF archival audio/20170225_PalmDesertAct2_T585.mp3: up to date"
+                outList = output.split(":")
+                status = outList[1].lstrip()
+                if status == "up to date":
+                    #rsync
+                    print("ready to move file " + f)
+                else:
+                    print("still copying " + outList[0])
     '''with cd(args.Dropbox):
         Dropbox = '/root/Dropbox'
         traffic = '/mnt/nas/traffic'

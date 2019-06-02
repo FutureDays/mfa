@@ -148,11 +148,12 @@ def moveDropboxToTraffic(args):
                 continue
             elif not ".tmp" in f and not f.startswith("."):
                 fullpath = os.path.join(dirs,f)
-                #output = subprocess.check_output('dropbox filestatus "' + fullpath + '"' )
-                output = "/root/Dropbox/MF archival audio/20170225_PalmDesertAct2_T585.mp3: up to date"
+                output = subprocess.check_output('dropbox filestatus "' + fullpath + '"' )
+                #output = "/root/Dropbox/MF archival audio/20170225_PalmDesertAct2_T585.mp3: up to date"
                 outList = output.split(":")
                 status = outList[1].lstrip()
                 if status == "up to date":
+                    print("copying" + f)
                     subprocess.check_output('rsync -av --progress "' + fullpath + '" ' + args.traffic)
                 else:
                     print("still copying " + outList[0])

@@ -142,6 +142,9 @@ def moveDropboxToTraffic(args):
     verify file not on NAS via catalog hash
     move file in tree to /NAS_Public/traffic
     '''
+    if not os.path.exists(traffic):
+        print("mount the NAS before continuing!")
+        exit()
     for dirs, subdirs, files in os.walk(args.Dropbox):
         for f in files:
             if not "." in f:
@@ -161,9 +164,7 @@ def moveDropboxToTraffic(args):
         Dropbox = '/root/Dropbox'
         traffic = '/mnt/nas/traffic'
         filestatus = {}
-        if not os.path.exists(traffic):
-            print("mount the NAS before continuing!")
-            exit()
+
         outList = output.split("\n")
         for pair in outList:
             filestatus[pair.split(":")[0].replace(":","")] = pair.split(":")[-1].lstrip()
@@ -192,6 +193,7 @@ def main():
     args.Dropbox = "/root/Dropbox"
     args.traffic = "/mnt/nas/traffic"
     if args.mdtt is True:
+        print("here")
         moveDropboxToTraffic(args)
         exit()
     path = "/Volumes/My Passport/Micheal Feinstein Audio Files"

@@ -143,9 +143,11 @@ def moveDropboxToTraffic(args):
     move file in tree to /NAS_Public/traffic
     '''
     if not os.path.exists(args.traffic):
+        print("here2")
         print("mount the NAS before continuing!")
         exit()
     for dirs, subdirs, files in os.walk(args.Dropbox):
+        print("here3")
         for f in files:
             if not "." in f:
                 continue

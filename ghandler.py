@@ -45,6 +45,16 @@ def find_cell(stringquery, worksheet):
     cell = worksheet.find(stringquery)
     return cell
 
+def cell_is_empty(cell, worksheet):
+    '''
+    returns True if cell is empty
+    '''
+    cell_value = worksheet.acell(cell).value
+    if cell_value:
+        return False
+    else:
+        return True
+
 def insert_row(rowlist, rowdict, rownum, sh):
     '''
     inserts a row based on row1 names in rowlist

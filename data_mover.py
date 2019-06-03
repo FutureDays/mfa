@@ -146,8 +146,9 @@ def moveDropboxToTraffic(args):
         print("here2")
         print("mount the NAS before continuing!")
         exit()
+    print("here3")    
     for dirs, subdirs, files in os.walk(args.Dropbox):
-        print("here3")
+        print("here4")
         for f in files:
             if not "." in f:
                 continue

@@ -156,7 +156,6 @@ def moveDropboxToTraffic(args):
                 fullpath = os.path.join(dirs,f)
                 with cd(args.Dropbox):
                     output = subprocess.check_output('dropbox filestatus "' + f + '"', shell=True)
-                    output = output.communicate()
                     output = output.decode("utf-8")
                 #output = "/root/Dropbox/MF archival audio/20170225_PalmDesertAct2_T585.mp3: up to date"
                 outList = output.split(":")

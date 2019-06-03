@@ -161,7 +161,8 @@ def moveDropboxToTraffic(args):
                 #output = "/root/Dropbox/MF archival audio/20170225_PalmDesertAct2_T585.mp3: up to date"
                 outList = output.split(":")
                 status = outList[1].lstrip()
-                if status == "up to date":
+                print(status)
+                if "up to date" in status:
                     print("copying" + f)
                     subprocess.check_output('rsync -av --progress "' + fullpath + '" ' + args.traffic)
                 else:

@@ -146,7 +146,7 @@ def moveDropboxToTraffic(args):
         print("here2")
         print("mount the NAS before continuing!")
         exit()
-    print(args.Dropbox)       
+    print(args.Dropbox)
     for dirs, subdirs, files in os.walk(args.Dropbox):
         print("here4")
         for f in files:
@@ -154,7 +154,7 @@ def moveDropboxToTraffic(args):
                 continue
             elif not ".tmp" in f and not f.startswith("."):
                 fullpath = os.path.join(dirs,f)
-                output = subprocess.check_output('dropbox filestatus "' + fullpath + '"' )
+                output = subprocess.check_output('dropbox filestatus ' + fullpath + '' )
                 #output = "/root/Dropbox/MF archival audio/20170225_PalmDesertAct2_T585.mp3: up to date"
                 outList = output.split(":")
                 status = outList[1].lstrip()

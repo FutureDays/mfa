@@ -194,6 +194,7 @@ def main():
     args = init()
     args.Dropbox = "/root/Dropbox"
     args.traffic = "/mnt/nas/traffic"
+    print(args)
     if args.mdtt is True:
         print("here")
         moveDropboxToTraffic(args)

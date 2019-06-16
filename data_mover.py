@@ -11,12 +11,14 @@ import os
 import re
 import wave
 import time
+import pprint
 import shutil
 import argparse
 import contextlib
 import ghandler as gh
 import gspread
 import subprocess
+from mutagen.mp3 import MP3
 
 class cd:
     """Context manager for changing the current working directory"""
@@ -53,16 +55,22 @@ def hash_file(filepath):
     else:
         return "hash error"
 
-def get_wav_duration(filepath):
+def get_file_duration(filepath):
     '''
     returns wave file duration hh:mm:ss
     '''
-    with contextlib.closing(wave.open(filepath,'r')) as f:
-        frames = f.getnframes()
-        rate = f.getframerate()
-        duration = frames / float(rate)
+    if filepath.endswith("wav") or filepath.endswith("WAV"):
+        with contextlib.closing(wave.open(filepath,'r')) as f:
+            frames = f.getnframes()
+            rate = f.getframerate()
+            duration = frames / float(rate)
+            duration = time.strftime('%H:%M:%S', time.gmtime(duration))
+            return(duration)
+    elif filepath.endswith("mp3") or filepath.endswith(".MP3"):
+        audio = MP3(filepath)
+        duration = audio.info.length
         duration = time.strftime('%H:%M:%S', time.gmtime(duration))
-        return(duration)
+        return duration
 
 def get_uid_from_file(filepath):
     '''
@@ -76,7 +84,7 @@ def get_uid_from_file(filepath):
     else:
         return "uid extraction error"
 
-def walk(path, args):
+def make_and_send_hash(path, args):
     '''
     walks a directory
     '''
@@ -94,7 +102,7 @@ def walk(path, args):
                 if cell_is_empty:
                     #get duration and update catalog
                     print("getting duration...")
-                    duration = get_wav_duration(fullpath)
+                    duration = get_file_duration(fullpath)
                     gh.update_cell_value("K" + row, str(duration), worksheet)
                     #get hash and update catalog
                     print("hashing file...")
@@ -179,8 +187,50 @@ def moveDropboxToTraffic(args):
             if fname.endswith(".mp3") or fname.endswith(".zip") or fname.endswith("wav"):
                 if status == 'up to date':'''
 
+def inventory_traffic(traffic):
+    '''
+    sends preliminary data from traffic to catalog
 
-
+    get dir and filename lists from catalog - convert to list of single paths
+    generate list of single paths for traffic
+    if not in catalog:
+        add filename, path, assign uid
+    '''
+    gc = gh.authorize()
+    spreadsheet = gc.open_by_url("https://docs.google.com/spreadsheets/d/1R7cYjCFdpwTbWYouUNOa_E72kJ9B8fJfeO6MEHiRZ4M/edit#gid=0")
+    worksheet = spreadsheet.worksheet("to_process")
+    filenames = worksheet.col_values(18)
+    filenames = filenames[1:]
+    dirs = worksheet.col_values(17)
+    dirs = dirs[1:]
+    uids = worksheet.col_values(1)
+    row = len(uids)
+    last_uid = uids[-1]
+    paths = []
+    for f in filenames:
+        thedir = dirs[filenames.index(f)]
+        dirs.append(os.path.join(thedir,f))
+    #pprint.pprint(dirs)
+    for file in os.listdir(traffic):
+        if not file in filenames and not file.endswith(".zip") and not file.startswith("."):
+            row = row + 1
+            catalog_record = {"filename":"","path":"traffic","duration":"","uid":"","row":str(row)}
+            print(file)
+            catalog_record["filename"] = file
+            duration = get_file_duration(os.path.join(traffic, file))
+            catalog_record["duration"] = duration
+            catalog_record["uid"] = int(last_uid) + 1
+            last_uid = catalog_record["uid"]
+            catalog_record["uid"] = str(catalog_record["uid"])
+            for key,value in catalog_record.items():
+                if key == "filename":
+                    gh.update_cell_value("R" + catalog_record["row"], catalog_record["filename"], worksheet)
+                elif key == "duration":
+                    gh.update_cell_value("K" + catalog_record["row"], catalog_record["duration"], worksheet)
+                elif key == "uid":
+                    gh.update_cell_value("A" + catalog_record["row"], catalog_record["uid"], worksheet)
+                elif key == "path":
+                    gh.update_cell_value("Q" + catalog_record["row"], catalog_record["path"], worksheet)
 
 def init():
     '''
@@ -189,6 +239,7 @@ def init():
     parser = argparse.ArgumentParser(description="makes the metadata ~flow~")
     parser.add_argument('-start',dest='start', help="the start UID (minus leading 500x) you want to hash")
     parser.add_argument('--moveDropboxToTraffic', dest='mdtt', action='store_true', help="moves file from Dropbox folder to traffic on NAS")
+    parser.add_argument('--inventoryTraffic', dest="it", action='store_true', help="send file data from traffic to catalog")
     args = parser.parse_args()
     return args
 
@@ -198,16 +249,18 @@ def main():
     '''
     args = init()
     args.Dropbox = "/root/Dropbox/MF archival audio"
-    args.traffic = "/mnt/nas/traffic"
+    args.traffic = "/Volumes/NAS_Public/traffic"
     print(args)
+    if args.it is True:
+        inventory_traffic(args.traffic)
     if args.mdtt is True:
-        print("here")
         moveDropboxToTraffic(args)
         exit()
-    path = "/Volumes/My Passport/Micheal Feinstein Audio Files"
-    cleanpath = "/Volumes/NAS_Public/hdd_uploads/feinstein_2014-2017_clone/compounded-objects"
-    #cleaner(cleanpath, args)
-    #walk(path, args)
+    if args.start is True:
+        path = "/Volumes/My Passport/Micheal Feinstein Audio Files"
+        cleanpath = "/Volumes/NAS_Public/hdd_uploads/feinstein_2014-2017_clone/compounded-objects"
+        #cleaner(cleanpath, args)
+        make_and_send_hash(path, args)
 
 if __name__ == '__main__':
     main()

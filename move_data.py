@@ -257,7 +257,10 @@ def main():
     if args.it or args.io:
         inventory_directory(args)
     if args.mdtt:
-        moveDropboxToTraffic(args)
+        try:
+            moveDropboxToTraffic(args)
+        except:
+            loggr("moveDropboxToTraffic didn't work :(")    
     '''if args.mdtt is True:
         moveDropboxToTraffic(args)
         exit()

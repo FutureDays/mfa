@@ -6,12 +6,14 @@ import os
 import re
 import pdb
 import json
-from nltk.tag import pos_tag
+#from nltk.tag import pos_tag
 import argparse
-from dateutil.parser import *
+#from dateutil.parser import *
 import datetime
 import subprocess
-import ghandler as g
+import google_handler as gh
+import make_rowObject
+from pprint import pprint
 
 class dotdict(dict):
     '''
@@ -180,6 +182,54 @@ def process(args, filefp, rObj, g):
     rObj.rd.identifier = elements[0]
     rObj.rd.filename = thefile.fname
     g.insert_row(rObj.rl, rObj.rd, rObj.row, rObj.sh)
+
+def get_last_uid(args):
+    '''
+    searches for highest number UID in sheets
+    '''
+    print("getting last/ highest uid from catalog sheets in mtd.get_last_uid()")
+    worksheets = ['catalog','to_process']
+    uids = []
+    for sheet in worksheets:
+        print("getting uids from " + sheet)
+        worksheet = args.spreadsheet.worksheet(sheet)
+        _uids = worksheet.col_values(1)
+        uids = uids + _uids[1:]
+    last_uid = max(uids)
+    print("last uid is " + str(last_uid))
+    return last_uid
+
+def is_file_cataloged(fullpath, args):
+    '''
+    tries to find a file in the catalog/ to_process
+    returns False if file not in catalog
+    returns rowObj if file in catalog
+    '''
+    print("initializing rowObj and header map in mtd.is_file_cataloged()")
+    rowObj, header_map = make_rowObject.init_rowObject(args) #get blank rowObj
+    print("initializing lists of filenames, locations, rows from " + args.sheet + " in mtd.is_file_cataloged()")
+    indx = ord(header_map['filename']) - 64 #get column number of filename
+    filenames = args.worksheet.col_values(indx) #get list of filenames from spreadsheet column
+    #filenames = filenames[1:] #remove header row from list of filename
+    indx = ord(header_map['dir']) - 64 #get column number of dir
+    dirs = args.worksheet.col_values(indx) #get list of directories from spreadsheet column
+    dirs = dirs[1:] #remove header row from list of dirs
+    uids = args.worksheet.col_values(1) #get list of uids - whicha re always in column 1/A
+    #uids = uids[1:]
+    fname = os.path.basename(fullpath)
+    fpath = fullpath.replace(fname, "")
+    print("initialization complete in mtd.is_file_cataloged()")
+    if fname in filenames:
+        print("file is cataloged")
+        rowObj.row = filenames.index(fname) + 1 #need to add 1 here because list indexes start at 0 and rows in Sheets start at 1
+        print("row is " + str(rowObj.row))
+        print("filling rowObj with row data in mtd.is_file_cataloged()")
+        rowObj = make_rowObject.fill_rowObj_fromRow(rowObj, header_map, args)
+        print("rowObj full in mtd.is_file_cataloged()")
+        return rowObj, header_map
+    else:
+        print("file is not cataloged")
+        return False
 
 def main():
     '''

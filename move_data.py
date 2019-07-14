@@ -157,16 +157,15 @@ def moveDropboxToTraffic(args):
     move file in tree to /NAS_Public/traffic
     '''
     if not os.path.exists(args.traffic):
-        print("here2")
         print("mount the NAS before continuing!")
         exit()
     print(args.Dropbox)
     for dirs, subdirs, files in os.walk(args.Dropbox):
-        print("here4")
         for f in files:
             if not "." in f:
                 continue
             elif not ".tmp" in f and not f.startswith("."):
+                print("processing file " + f)
                 fullpath = os.path.join(dirs,f)
                 with cd(args.Dropbox):
                     output = subprocess.check_output('dropbox filestatus "' + f + '"', shell=True)
@@ -177,21 +176,16 @@ def moveDropboxToTraffic(args):
                 status = outList[1].lstrip()
                 print(status)
                 if "up to date" in status:
-                    print("copying" + f)
-                    subprocess.check_output('rsync -av --progress "' + fullpath + '" ' + args.traffic, shell=True)
+                    print("retrieving worksheet " + args.sheet + " in md.inventory_directory()")
+                    args = gh.get_worksheet(args)
+                    print("checking if file is cataloged in md.inventory_directory()")
+                    file_is_cataloged, header_map = mtd.is_file_cataloged(os.path.join(args.path,file), args)
+                    pprint(file_is_cataloged)
+                    if not file_is_cataloged:
+                        print("copying" + f)
+                        subprocess.check_output('rsync -av --progress "' + fullpath + '" ' + args.traffic, shell=True)
                 else:
                     print("still copying " + outList[0])
-    '''with cd(args.Dropbox):
-        Dropbox = '/root/Dropbox'
-        traffic = '/mnt/nas/traffic'
-        filestatus = {}
-
-        outList = output.split("\n")
-        for pair in outList:
-            filestatus[pair.split(":")[0].replace(":","")] = pair.split(":")[-1].lstrip()
-        for fname, status in filestatus:
-            if fname.endswith(".mp3") or fname.endswith(".zip") or fname.endswith("wav"):
-                if status == 'up to date':'''
 
 def make_single_file_inventory(file, row, rowObj, uids, header_map, args):
     '''
@@ -316,6 +310,7 @@ def main():
     args = init()
     if platform == "linux" or platform == "linux2":
         args.Dropbox = "/root/Dropbox/MF archival audio"
+        args.traffic = "/mnt/nas/traffic"
     elif platform == "darwin":
         args.Dropbox = "/root/Dropbox/MF archival audio"
         args.traffic = "/Volumes/NAS_Public/traffic"

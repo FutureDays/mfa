@@ -230,7 +230,7 @@ def is_file_cataloged(fullpath, args):
         loggr("file is cataloged")
         print("file is cataloged")
         rowObj.row = filenames.index(fname) + 1 #need to add 1 here because list indexes start at 0 and rows in Sheets start at 1
-        logger("row is " + str(rowObj.row))
+        loggr("row is " + str(rowObj.row))
         print("row is " + str(rowObj.row))
         loggr("filling rowObj with row data in mtd.is_file_cataloged()")
         print("filling rowObj with row data in mtd.is_file_cataloged()")

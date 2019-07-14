@@ -229,7 +229,7 @@ def is_file_cataloged(fullpath, args):
         return rowObj, header_map
     else:
         print("file is not cataloged")
-        return False
+        return False, header_map
 
 def main():
     '''

@@ -18,7 +18,7 @@ def makePID(pid):
 		_pid = pid #set _pid to "old" pid
 		try:
 			pid = psutil.Process(pid).ppid() #try to set a new pid to the parent of the old pid
-			if psutil.Process(pid).name() == "cmd.exe" or psutil.Process(pid).name() == 'bash': #if the parent of the old pid is cmd.exe
+			if psutil.Process(pid).name() == "cmd.exe" or psutil.Process(pid).name() == 'bash' or psutil.Process(pid).name() == 'sh': #if the parent of the old pid is cmd.exe
 				return _pid #return the old pid
 		except:	#if the assignment didn't work
 			return _pid #return the old pid
@@ -62,7 +62,7 @@ def log(message, **kwargs):
 	write(message, caller, fname)
 	if "print" in kwargs:
 		if kwargs['print'] is True:
-			prnt(message)
+			print(message)
 	###DONE###
 
 if __name__ == '__main__':

@@ -310,7 +310,7 @@ def main():
     '''
     do the thing
     '''
-    print("move_data.py started at " + datetime.now())
+    print("move_data.py started at " + str(datetime.now())
     args = init()
     if platform == "linux" or platform == "linux2":
         args.Dropbox = "/root/Dropbox/MF archival audio"

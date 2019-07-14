@@ -28,6 +28,7 @@ import google_handler as gh
 import make_metadata as mtd
 import argparse
 import string
+from logger import log as loggr
 
 class dotdict(dict):
     '''
@@ -155,7 +156,7 @@ def fill_rowObj_fromRow(rowObj, header_map, args):
         indx = ord(letter)
         rowObj.data[name] = rowData[indx - 65] #assigns every key in data:{}
         rowObj.identifier = args.worksheet.acell("A" + str(rowObj.row)).value
-    loggr("rowObj fill from row complete")    
+    loggr("rowObj fill from row complete")
     print("rowObj fill from row complete")
     return rowObj
 

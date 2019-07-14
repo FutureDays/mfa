@@ -183,12 +183,14 @@ def moveDropboxToTraffic(args):
                     file_is_cataloged, header_map = mtd.is_file_cataloged(os.path.join(args.Dropbox,file), args)
                     pprint(file_is_cataloged)
                     if not file_is_cataloged:
-                        print("copying" + file)
+                        print("copying " + file)
                         subprocess.check_output('rsync -av --progress "' + fullpath + '" ' + args.traffic, shell=True)
                     else:
                         print("file " + file + " is cataloged")
                 else:
                     print("still copying " + outList[0])
+            print("resting 5s for API reset")        
+            time.sleep(5)
 
 def make_single_file_inventory(file, row, rowObj, uids, header_map, args):
     '''

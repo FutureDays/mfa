@@ -221,6 +221,9 @@ def inventory_directory(args):
                 loggr("sending updates to catalog in md.inventory_directory()")
                 print("sending updates to catalog in md.inventory_directory()")
                 update_catalog(rowObj, file_is_cataloged, header_map, args)
+            loggr("sleeping for 30s for API reset")
+            print("sleeping for 30s for API reset")
+            time.sleep(30)
 
 def init():
     '''

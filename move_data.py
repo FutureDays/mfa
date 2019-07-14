@@ -15,6 +15,7 @@ import time
 import pprint
 import shutil
 import argparse
+from datetime import datetime
 import contextlib
 import google_handler as gh
 import make_filedata as mfd
@@ -184,6 +185,8 @@ def moveDropboxToTraffic(args):
                     if not file_is_cataloged:
                         print("copying" + f)
                         subprocess.check_output('rsync -av --progress "' + fullpath + '" ' + args.traffic, shell=True)
+                    else:
+                        print("file " + f + " is cataloged")
                 else:
                     print("still copying " + outList[0])
 
@@ -307,6 +310,7 @@ def main():
     '''
     do the thing
     '''
+    print("move_data.py started at " + datetime.now())
     args = init()
     if platform == "linux" or platform == "linux2":
         args.Dropbox = "/root/Dropbox/MF archival audio"

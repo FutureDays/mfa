@@ -189,8 +189,8 @@ def moveDropboxToTraffic(args):
                         print("file " + file + " is cataloged")
                 else:
                     print("still copying " + outList[0])
-            print("resting 5s for API reset")        
-            time.sleep(5)
+            print("resting 5s for API reset")
+            time.sleep(30)
 
 def make_single_file_inventory(file, row, rowObj, uids, header_map, args):
     '''

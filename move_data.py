@@ -310,7 +310,7 @@ def main():
     '''
     do the thing
     '''
-    print("move_data.py started at " + str(datetime.now())
+    print("move_data.py started at " + str(datetime.now()))
     args = init()
     if platform == "linux" or platform == "linux2":
         args.Dropbox = "/root/Dropbox/MF archival audio"
@@ -320,6 +320,8 @@ def main():
         args.traffic = "/Volumes/NAS_Public/traffic"
     if args.it or args.io:
         inventory_directory(args)
+    if args.mdtt:
+        moveDropboxToTraffic(args)    
     '''if args.mdtt is True:
         moveDropboxToTraffic(args)
         exit()

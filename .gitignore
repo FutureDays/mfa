@@ -8,3 +8,4 @@ mtd/converter-indvxml2mods-outs/
 client_secret.json
 credentials.json
 *invoice*
+logs/

@@ -26,6 +26,7 @@ import subprocess
 from mutagen.mp3 import MP3
 from pprint import pprint
 from sys import platform
+from logger import log as loggr
 
 class cd:
     """Context manager for changing the current working directory"""
@@ -46,76 +47,6 @@ class dotdict(dict):
     __getattr__ = dict.get
     __setattr__ = dict.__setitem__
     __delattr__ = dict.__delitem__
-
-def hash_file(filepath):
-    '''
-    uses shasum to create SHA1 hash of file
-    '''
-    output = subprocess.check_output("shasum '" + filepath + "'", shell=True)
-    match = ''
-    #search for 40 consecutive word characters in string, convert byte output from shasum in CLI to utf-8 string
-    match = re.search(r'\w{40}', output.decode("utf-8"))
-    if match:
-        #convert match object to string
-        thehash= match.group()
-        return thehash
-    else:
-        return "hash error"
-
-def get_file_duration(filepath):
-    '''
-    returns wave file duration hh:mm:ss
-    '''
-    if filepath.endswith("wav") or filepath.endswith("WAV"):
-        with contextlib.closing(wave.open(filepath,'r')) as f:
-            frames = f.getnframes()
-            rate = f.getframerate()
-            duration = frames / float(rate)
-            duration = time.strftime('%H:%M:%S', time.gmtime(duration))
-            return(duration)
-    elif filepath.endswith("mp3") or filepath.endswith(".MP3"):
-        audio = MP3(filepath)
-        duration = audio.info.length
-        duration = time.strftime('%H:%M:%S', time.gmtime(duration))
-        return duration
-
-def get_uid_from_file(filepath):
-    '''
-    extracts 5000x number from full path
-    '''
-    match = ''
-    match = re.search(r'\d{14}', filepath)
-    if match:
-        uid = match.group()
-        return uid
-    else:
-        return "uid extraction error"
-
-def make_and_send_hash(path, args):
-    '''
-    walks a directory
-    '''
-    for dirs, subdirs, files in os.walk(path):
-        for f in files[(int(args.start) - 6):]:
-                print(f)
-                gc = gh.authorize()
-                spreadsheet = gc.open_by_url("https://docs.google.com/spreadsheets/d/1R7cYjCFdpwTbWYouUNOa_E72kJ9B8fJfeO6MEHiRZ4M/edit#gid=0")
-                worksheet = spreadsheet.worksheet("catalog")
-                fullpath = os.path.join(dirs, f)
-                uid = mfd.get_uid_from_file(fullpath)
-                sheets_uid_match = gh.find_cell(uid, worksheet)
-                row = str(sheets_uid_match.row)
-                cell_is_empty = gh.cell_is_empty("N"+row,worksheet)
-                if cell_is_empty:
-                    #get duration and update catalog
-                    print("getting duration...")
-                    duration = get_file_duration(fullpath)
-                    gh.update_cell_value("K" + row, str(duration), worksheet)
-                    #get hash and update catalog
-                    print("hashing file...")
-                    thehash = mfd.hash_file(fullpath)
-                    gh.update_cell_value("N" + row, thehash, worksheet)
-                time.sleep(4.0)
 
 def cleaner(path, args):
     '''
@@ -158,38 +89,48 @@ def moveDropboxToTraffic(args):
     move file in tree to /NAS_Public/traffic
     '''
     if not os.path.exists(args.traffic):
+        loggr("mount the NAS before continuing!", **{"level":"error"})
         print("mount the NAS before continuing!")
         exit()
-    print(args.Dropbox)
+    loggr("args.Dropbox is " + args.Dropbox)
     for dirs, subdirs, files in os.walk(args.Dropbox):
         for file in files:
             if not "." in file:
                 continue
             elif not ".tmp" in file and not file.startswith("."):
+                loggr("processing file " + file)
                 print("processing file " + file)
                 fullpath = os.path.join(dirs, file)
                 with cd(args.Dropbox):
                     output = subprocess.check_output('dropbox filestatus "' + file + '"', shell=True)
                     output = output.decode("utf-8")
-                    print(output)
+                    loggr(output)
                 #output = "/root/Dropbox/MF archival audio/20170225_PalmDesertAct2_T585.mp3: up to date"
                 outList = output.split(":")
                 status = outList[1].lstrip()
-                print(status)
+                loggr(status)
                 if "up to date" in status:
+                    loggr("retrieving worksheet " + args.sheet + " in md.inventory_directory()")
                     print("retrieving worksheet " + args.sheet + " in md.inventory_directory()")
                     args = gh.get_worksheet(args)
+                    loggr("checking if file is cataloged in md.inventory_directory()")
                     print("checking if file is cataloged in md.inventory_directory()")
                     file_is_cataloged, header_map = mtd.is_file_cataloged(os.path.join(args.Dropbox,file), args)
-                    pprint(file_is_cataloged)
+                    loggr(file_is_cataloged)
                     if not file_is_cataloged:
+                        loggr("file is not cataloged")
+                        print("file is not cataloged")
+                        loggr("copying " + file)
                         print("copying " + file)
                         subprocess.check_output('rsync -av --progress "' + fullpath + '" ' + args.traffic, shell=True)
                     else:
+                        loggr("file " + file + " is cataloged")
                         print("file " + file + " is cataloged")
                 else:
+                    loggr("still copying " + outList[0])
                     print("still copying " + outList[0])
-            print("resting 5s for API reset")
+            loggr("resting 30s for API reset")
+            print("resting 30s for API reset")
             time.sleep(30)
 
 def make_single_file_inventory(file, row, rowObj, uids, header_map, args):
@@ -206,9 +147,8 @@ def make_single_file_inventory(file, row, rowObj, uids, header_map, args):
         rowObj.identifier = int(mtd.get_last_uid()) + 1
     args.uid = rowObj.identifier
     rowObj.data['SHA1 hash - on RAID'] = mfd.hash_file(fullpath)
-    pprint(rowObj)
+    loggr(rowObj)
     if not rowObj.identifier in uids:
-        print('here')
         rowObj.data.duration = mfd.get_file_duration(fullpath)
         gh.update_cell_value("A" + str(rowObj.row), rowObj.identifier, args.worksheet)
         for key, value in rowObj.data.items():
@@ -219,17 +159,20 @@ def update_catalog(rowObj, catalog_rowObj, header_map, args):
     '''
     updates catalog with data generated from file
     '''
+    loggr("updating catalog with file info in md.update_catalog()")
     print("updating catalog with file info in md.update_catalog()")
     for key, value in rowObj.data.items():
-        print(key)
-        print("rowObj value: " + str(value))
+        loggr(key)
+        loggr("rowObj value: " + str(value))
         if value:
             catalog_value = catalog_rowObj.data[key]
-            print("catalog_value: " + catalog_value)
+            loggr("catalog_value: " + catalog_value)
             if not catalog_value:
+                loggr("no catalog value found for key " + key + ", updating catalog")
                 print("no catalog value found for key " + key + ", updating catalog")
                 cell = header_map[key] + str(rowObj.row)
                 value = rowObj.data[key]
+                loggr("updating cell " + cell + " with value " + value)
                 print("updating cell " + cell + " with value " + value)
                 gh.update_cell_value(cell, value, args.worksheet)
 
@@ -245,59 +188,45 @@ def inventory_directory(args):
         args.path = args.traffic
     elif args.io:
         args.path = args.io
+    loggr("getting list of files from " + args.path + " in md.inventory_directory()")
     print("getting list of files from " + args.path + " in md.inventory_directory()")
     for file in os.listdir(args.path):
         if not file.endswith(".zip") and not file.startswith("."):
+            loggr("processing file " + file)
             print("processing file " + file)
+            loggr("retrieving worksheet " + args.sheet + " in md.inventory_directory()")
             print("retrieving worksheet " + args.sheet + " in md.inventory_directory()")
             args = gh.get_worksheet(args)
+            loggr("checking if file is cataloged in md.inventory_directory()")
             print("checking if file is cataloged in md.inventory_directory()")
             file_is_cataloged, header_map = mtd.is_file_cataloged(os.path.join(args.path,file), args)
             rowObj, _header_map = mtd.is_file_cataloged(os.path.join(args.path,file), args)
-            pprint(file_is_cataloged)
+            loggr(file_is_cataloged)
             if file_is_cataloged:
+                loggr("filling rowObj from filedata in md.inventory_directory()")
                 print("filling rowObj from filedata in md.inventory_directory()")
                 rowObj = mfd.fill_rowObj_fromFile(file, rowObj, args)
-                print("rowObj")
-                pprint(rowObj)
+                loggr("rowObj")
+                loggr(rowObj)
+                loggr("file is cataloged")
                 print("file_is_cataloged")
-                pprint(file_is_cataloged)
+                loggr(file_is_cataloged)
                 if not rowObj.identifier:
+                    loggr("no identifier in catalog or filename, generating new uid")
                     print("no identifier in catalog or filename, generating new uid")
                     last_uid = mtd.get_last_uid(args)
                     rowObj.identifier = str(int(last_uid) + 1)
+                    loggr("uid is " + rowObj.identifier)
                     print("uid is " + rowObj.identifier)
+                loggr("sending updates to catalog in md.inventory_directory()")
                 print("sending updates to catalog in md.inventory_directory()")
                 update_catalog(rowObj, file_is_cataloged, header_map, args)
-                #rowObj = make_single_file_inventory(file, row, rowObj, uids, header_map, args)
-    '''
-    create list of fullpaths
-    '''
-    '''
-    for f in filenames:
-        thedir = dirs[filenames.index(f) - 1]
-        catalog_paths.append(os.path.join(thedir,f))
-    '''
-    '''
-    walk thru traffic/ other
-    for each file in traffic/ other
-    make a rowObj for the file
-    inventory the file
-    '''
-
-
-    '''if args.ook:
-            rowObj = make_rowObject.fill_rowObject_fromCatalog(rowObj, header_map, args)
-            make_single_file_inventory(file, row, rowObj, uids, header_map, worksheet, args)
-    else:
-        if not file in filenames:
-            make_single_file_inventory(file, row, rowObj, uids, header_map, worksheet, args)'''
-
 
 def init():
     '''
     initialize vars
     '''
+    loggr("initializing variables")
     parser = argparse.ArgumentParser(description="makes the metadata ~flow~")
     parser.add_argument('-start',dest='start', help="the start UID you want to hash")
     parser.add_argument('--moveDropboxToTraffic', dest='mdtt', action='store_true', help="moves file from Dropbox folder to traffic on NAS")
@@ -312,6 +241,7 @@ def main():
     '''
     do the thing
     '''
+    loggr("move_data.py started at " + str(datetime.now()))
     print("move_data.py started at " + str(datetime.now()))
     args = init()
     if platform == "linux" or platform == "linux2":
@@ -320,6 +250,7 @@ def main():
     elif platform == "darwin":
         args.Dropbox = "/root/Dropbox/MF archival audio"
         args.traffic = "/Volumes/NAS_Public/traffic"
+    loggr(args)
     if args.it or args.io:
         inventory_directory(args)
     if args.mdtt:

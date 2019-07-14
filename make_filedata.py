@@ -14,6 +14,7 @@ import wave
 import time
 import subprocess
 from mutagen.mp3 import MP3
+from logger import log as loggr
 
 class cd:
     """Context manager for changing the current working directory"""
@@ -56,6 +57,7 @@ def get_uid_from_file(filepath):
     '''
     extracts 5000x number from full path
     '''
+    loggr("attempting to locate uid in file name in mfd.get_uid_from_file")
     print("attempting to locate uid in file name in mfd.get_uid_from_file")
     match = ''
     match = re.search(r'\d{14}', filepath)
@@ -70,6 +72,7 @@ def hash_file(filepath):
     '''
     uses shasum to create SHA1 hash of file
     '''
+    loggr('attempting to hash file ' + filepath)
     print('attempting to hash file ' + filepath)
     output = subprocess.check_output("shasum '" + filepath + "'", shell=True)
     match = ''
@@ -78,6 +81,7 @@ def hash_file(filepath):
     if match:
         #convert match object to string
         thehash= match.group()
+        loggr("file " + os.path.basename(filepath) + " hash is " + thehash)
         print("file " + os.path.basename(filepath) + " hash is " + thehash)
         return thehash
     else:
@@ -89,29 +93,23 @@ def fill_rowObj_fromFile(file, rowObj, args):
     '''
     fullpath = os.path.join(args.path, file)
     duration = rowObj['data']['duration']
-    print(type(duration))
-    print(len(duration))
+    loggr(duration)
     print(duration)
     if not duration:
+        loggr("no duration in catalog, getting duration of " + file)
         print("no duration in catalog, getting duration of " + file)
         rowObj.data.duration = get_file_duration(fullpath)
     hash = rowObj.data['SHA1 hash - on RAID']
-    print(len(hash))
     if not hash:
+        logg("no hash in catalog, hashing " + file)
         print("no hash in catalog, hashing " + file)
         rowObj.data['SHA1 hash - on RAID'] = hash_file(fullpath)
         if not rowObj.data['SHA1 hash - on RAID']:
+            loggr("hash error")
             print("hash error")
-    '''
-    if not rowObj.data['SHA1 hash - on drive']:
-        if not args.path ==
-        print("no hash in catalog, hashing " + file)
-        rowObj.data['SHA1 hash - on drive'] = hash_file(fullpath)
-        if not rowObj.data['SHA1 hash - on RAID']:
-            print("hash error")
-    '''
     uid = rowObj.identifier
     if not uid:
+        loggr("identifier not in rowObj, attempting to locate uid in filename in mfd.fill_rowObj_fromFile()")
         print("identifier not in rowObj, attempting to locate uid in filename in mfd.fill_rowObj_fromFile()")
         rowObj.identifier = get_uid_from_file(fullpath)
     return rowObj
@@ -122,7 +120,7 @@ def make_rowObj(args):
     '''
     rowObj, header_map = make_rowObject.init_rowObject(args)
     rowObj = make_rowObject.fill_rowObject_fromCatalog(rowObj, header_map, args)
-    pprint(rowObj)
+    loggr(rowObj)
     return rowObj
 
 def init():

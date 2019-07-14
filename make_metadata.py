@@ -14,6 +14,7 @@ import subprocess
 import google_handler as gh
 import make_rowObject
 from pprint import pprint
+from logger import log as loggr
 
 class dotdict(dict):
     '''
@@ -187,15 +188,18 @@ def get_last_uid(args):
     '''
     searches for highest number UID in sheets
     '''
+    loggr("getting last/ highest uid from catalog sheets in mtd.get_last_uid()")
     print("getting last/ highest uid from catalog sheets in mtd.get_last_uid()")
     worksheets = ['catalog','to_process']
     uids = []
     for sheet in worksheets:
+        loggr("getting uids from " + sheet)
         print("getting uids from " + sheet)
         worksheet = args.spreadsheet.worksheet(sheet)
         _uids = worksheet.col_values(1)
         uids = uids + _uids[1:]
     last_uid = max(uids)
+    loggr("last uid is " + str(last_uid))
     print("last uid is " + str(last_uid))
     return last_uid
 
@@ -205,8 +209,10 @@ def is_file_cataloged(fullpath, args):
     returns False if file not in catalog
     returns rowObj if file in catalog
     '''
+    loggr("initializing rowObj and header map in mtd.is_file_cataloged()")
     print("initializing rowObj and header map in mtd.is_file_cataloged()")
     rowObj, header_map = make_rowObject.init_rowObject(args) #get blank rowObj
+    loggr("initializing lists of filenames, locations, rows from " + args.sheet + " in mtd.is_file_cataloged()")
     print("initializing lists of filenames, locations, rows from " + args.sheet + " in mtd.is_file_cataloged()")
     indx = ord(header_map['filename']) - 64 #get column number of filename
     filenames = args.worksheet.col_values(indx) #get list of filenames from spreadsheet column
@@ -218,16 +224,22 @@ def is_file_cataloged(fullpath, args):
     #uids = uids[1:]
     fname = os.path.basename(fullpath)
     fpath = fullpath.replace(fname, "")
+    loggr("initialization complete in mtd.is_file_cataloged()")
     print("initialization complete in mtd.is_file_cataloged()")
     if fname in filenames:
+        loggr("file is cataloged")
         print("file is cataloged")
         rowObj.row = filenames.index(fname) + 1 #need to add 1 here because list indexes start at 0 and rows in Sheets start at 1
+        logger("row is " + str(rowObj.row))
         print("row is " + str(rowObj.row))
+        loggr("filling rowObj with row data in mtd.is_file_cataloged()")
         print("filling rowObj with row data in mtd.is_file_cataloged()")
         rowObj = make_rowObject.fill_rowObj_fromRow(rowObj, header_map, args)
+        loggr("rowObj full in mtd.is_file_cataloged()")
         print("rowObj full in mtd.is_file_cataloged()")
         return rowObj, header_map
     else:
+        loggr("file is not cataloged")
         print("file is not cataloged")
         return False, header_map
 

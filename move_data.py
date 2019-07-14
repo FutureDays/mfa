@@ -180,7 +180,7 @@ def moveDropboxToTraffic(args):
                     print("retrieving worksheet " + args.sheet + " in md.inventory_directory()")
                     args = gh.get_worksheet(args)
                     print("checking if file is cataloged in md.inventory_directory()")
-                    file_is_cataloged, header_map = mtd.is_file_cataloged(os.path.join(args.path,file), args)
+                    file_is_cataloged, header_map = mtd.is_file_cataloged(os.path.join(args.Dropbox,file), args)
                     pprint(file_is_cataloged)
                     if not file_is_cataloged:
                         print("copying" + f)
@@ -321,7 +321,7 @@ def main():
     if args.it or args.io:
         inventory_directory(args)
     if args.mdtt:
-        moveDropboxToTraffic(args)    
+        moveDropboxToTraffic(args)
     '''if args.mdtt is True:
         moveDropboxToTraffic(args)
         exit()

@@ -186,7 +186,7 @@ def moveDropboxToTraffic(args):
                         print("copying" + f)
                         subprocess.check_output('rsync -av --progress "' + fullpath + '" ' + args.traffic, shell=True)
                     else:
-                        print("file " + f + " is cataloged")
+                        print("file " + file + " is cataloged")
                 else:
                     print("still copying " + outList[0])
 

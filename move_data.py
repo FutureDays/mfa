@@ -183,7 +183,7 @@ def moveDropboxToTraffic(args):
                     file_is_cataloged, header_map = mtd.is_file_cataloged(os.path.join(args.Dropbox,file), args)
                     pprint(file_is_cataloged)
                     if not file_is_cataloged:
-                        print("copying" + f)
+                        print("copying" + file)
                         subprocess.check_output('rsync -av --progress "' + fullpath + '" ' + args.traffic, shell=True)
                     else:
                         print("file " + file + " is cataloged")

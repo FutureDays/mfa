@@ -83,17 +83,6 @@ def insert_row(rowlist, rowdict, rownum, sh):
             cell_list[idx].value = c.decode('utf-8', 'ignore')
     sh.update_cells(cell_list)
 
-def main():
-    '''
-    do the things
-    '''
-    gc = authorize()
-    spreadsheet = gc.open_by_url("https://docs.google.com/spreadsheets/d/1R7cYjCFdpwTbWYouUNOa_E72kJ9B8fJfeO6MEHiRZ4M/edit#gid=0")
-    worksheet = spreadsheet.worksheet("catalog")
-    #row = get_row_values(worksheet)
-    #update_cell_value('M2',worksheet)
-    thecell = find_cell('50000000000000',worksheet)
-    print(thecell.row)
-
 if __name__ == '__main__':
-    main()
+    print("google_handler has no standalone functions")
+    print("perhaps you meant to run move_data.py?")

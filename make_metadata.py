@@ -188,16 +188,14 @@ def get_last_uid(args):
     '''
     searches for highest number UID in sheets
     '''
-    loggr("getting last/ highest uid from catalog sheets in mtd.get_last_uid()")
-    print("getting last/ highest uid from catalog sheets in mtd.get_last_uid()")
-    worksheets = ['catalog','to_process']
+    loggr("getting last/ highest uid from catalog in mtd.get_last_uid()")
+    print("getting last/ highest uid from catalog in mtd.get_last_uid()")
     uids = []
-    for sheet in worksheets:
-        loggr("getting uids from " + sheet)
-        print("getting uids from " + sheet)
-        worksheet = args.spreadsheet.worksheet(sheet)
-        _uids = worksheet.col_values(1)
-        uids = uids + _uids[1:]
+    loggr("getting uids from " + sheet)
+    print("getting uids from " + sheet)
+    worksheet = args.spreadsheet.worksheet(args.sheet)
+    _uids = worksheet.col_values(1)
+    uids = uids + _uids[1:]
     last_uid = max(uids)
     loggr("last uid is " + str(last_uid))
     print("last uid is " + str(last_uid))
@@ -205,13 +203,15 @@ def get_last_uid(args):
 
 def is_file_cataloged(fullpath, args):
     '''
-    tries to find a file in the catalog/ to_process
+    tries to find a file in the catalog
     returns False if file not in catalog
     returns rowObj if file in catalog
     '''
     loggr("initializing rowObj and header map in mtd.is_file_cataloged()")
     print("initializing rowObj and header map in mtd.is_file_cataloged()")
     rowObj, header_map = make_rowObject.init_rowObject(args) #get blank rowObj
+    pprint(rowObj)
+    pprint(header_map)
     loggr("initializing lists of filenames, locations, rows from " + args.sheet + " in mtd.is_file_cataloged()")
     print("initializing lists of filenames, locations, rows from " + args.sheet + " in mtd.is_file_cataloged()")
     indx = ord(header_map['filename']) - 64 #get column number of filename
@@ -237,41 +237,14 @@ def is_file_cataloged(fullpath, args):
         rowObj = make_rowObject.fill_rowObj_fromRow(rowObj, header_map, args)
         loggr("rowObj full in mtd.is_file_cataloged()")
         print("rowObj full in mtd.is_file_cataloged()")
+        pprint(rowObj)
         return rowObj, header_map
     else:
         loggr("file is not cataloged")
         print("file is not cataloged")
         return False, header_map
 
-def main():
-    '''
-    do the things:
-    extract bwf metadata
-    write xml to file
-    '''
-    #args = dotdict({})
-    #args = config(args)
-    args = init_args_cli()
-    rObj = dotdict({})
-    rObj.gc = g.authorize()
-    rObj.sh = rObj.gc.open("mfa_descriptiveMetadata").sheet1
-    rObj.rl = rObj.sh.row_values(1)
-    rObj.rd = dotdict(g.make_rowdict(rObj.sh))
-    rObj.offset = 2
-    rObj.row = 2
-    if os.path.isfile(args.dir):
-        filefp = args.dir
-        process(args, filefp, rObj, g)
-    elif os.path.isdir(args.dir):
-        for dirs, subdirs, files in os.walk(args.dir):
-            for f in files:
-                filefp = os.path.join(dirs, f)
-                process(args, filefp, rObj, g)
-                rObj.row = rObj.row + 1
-                #foo = raw_input("eh")
-
-
-
 
 if __name__ == "__main__":
-    main()
+    print("make_metadata has no standalone functions")
+    print("perhaps you meant to run move_data.py?")

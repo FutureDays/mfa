@@ -87,11 +87,11 @@ def hash_file(filepath):
     else:
         return False
 
-def fill_rowObj_fromFile(file, rowObj, args):
+def fill_rowObj_fromFile(fullpath, rowObj, args):
     '''
     fills rowObj with info from file
     '''
-    fullpath = os.path.join(args.path, file)
+    file = os.path.basename(fullpath)
     duration = rowObj['data']['duration']
     loggr(duration)
     print(duration)
@@ -99,12 +99,16 @@ def fill_rowObj_fromFile(file, rowObj, args):
         loggr("no duration in catalog, getting duration of " + file)
         print("no duration in catalog, getting duration of " + file)
         rowObj.data.duration = get_file_duration(fullpath)
-    hash = rowObj.data['SHA1 hash - on RAID']
+    if "nas" in fullpath or "NAS" in fullpath:
+        whichHash = 'SHA1hash-onRAID'
+    else:
+        whichHash = 'SHA1hash-ondrive'
+    hash = rowObj.data[whichHash]
     if not hash:
-        logg("no hash in catalog, hashing " + file)
+        loggr("no hash in catalog, hashing " + file)
         print("no hash in catalog, hashing " + file)
-        rowObj.data['SHA1 hash - on RAID'] = hash_file(fullpath)
-        if not rowObj.data['SHA1 hash - on RAID']:
+        rowObj.data[whichHash] = hash_file(fullpath)
+        if not rowObj.data[whichHash]:
             loggr("hash error")
             print("hash error")
     uid = rowObj.identifier
@@ -123,25 +127,6 @@ def make_rowObj(args):
     loggr(rowObj)
     return rowObj
 
-def init():
-    '''
-    inits vars from CLI
-    '''
-    parser = argparse.ArgumentParser(description="makes a rowObject for integrating filedata and Google Sheets")
-    parser.add_argument('-sheet',choices=['catalog','to_process'],dest='sheet', help="the Google Sheet to use")
-    parser.add_argument('-identifier', dest='uid', help="the uid for the file, e.g. 50000123")
-    parser.add_argument('-filepath', dest='filepath', help="the path to the file you want to work on")
-    #parser.add_argument('--inventoryTraffic', dest="it", action='store_true', help="send file data from traffic to catalog")
-    args = parser.parse_args()
-    return args
-
-def main():
-    '''
-    do the thing
-    '''
-    args = init()
-    rowObj = make_rowObj(args)
-    rowObj = fill_rowObj_fromFile(rowObj, args)
-
 if __name__ == '__main__':
-    main()
+    print("make_filedata has no standalone functions")
+    print("perhaps you meant to run move_data.py?")

@@ -178,7 +178,7 @@ def update_catalog(rowObj, catalog_rowObj, header_map, args):
 
 def inventory_directory(args):
     '''
-    send file data to catalog/ to_process
+    send file data to catalog
     get dir and filename lists from catalog - convert to list of single paths
     generate list of single paths for traffic
     if not in catalog:
@@ -190,40 +190,46 @@ def inventory_directory(args):
         args.path = args.io
     loggr("getting list of files from " + args.path + " in md.inventory_directory()")
     print("getting list of files from " + args.path + " in md.inventory_directory()")
-    for file in os.listdir(args.path):
-        if not file.endswith(".zip") and not file.startswith("."):
-            loggr("processing file " + file)
-            print("processing file " + file)
-            loggr("retrieving worksheet " + args.sheet + " in md.inventory_directory()")
-            print("retrieving worksheet " + args.sheet + " in md.inventory_directory()")
-            args = gh.get_worksheet(args)
-            loggr("checking if file is cataloged in md.inventory_directory()")
-            print("checking if file is cataloged in md.inventory_directory()")
-            file_is_cataloged, header_map = mtd.is_file_cataloged(os.path.join(args.path,file), args)
-            rowObj, _header_map = mtd.is_file_cataloged(os.path.join(args.path,file), args)
-            loggr(file_is_cataloged)
-            if file_is_cataloged:
-                loggr("filling rowObj from filedata in md.inventory_directory()")
-                print("filling rowObj from filedata in md.inventory_directory()")
-                rowObj = mfd.fill_rowObj_fromFile(file, rowObj, args)
-                loggr("rowObj")
-                loggr(rowObj)
-                loggr("file is cataloged")
-                print("file_is_cataloged")
+    for dirs, subdirs, files in os.walk(args.path):
+        for file in files:
+            if not file.endswith(".zip") and not file.startswith(".") and not file.endswith(".xml"):
+                if args.start:
+                    if int(args.start) < int(file[:14]):
+                        continue        
+                loggr("processing file " + file)
+                print("processing file " + file)
+                loggr("retrieving worksheet " + args.sheet + " in md.inventory_directory()")
+                print("retrieving worksheet " + args.sheet + " in md.inventory_directory()")
+                args = gh.get_worksheet(args)
+                loggr("checking if file is cataloged in md.inventory_directory()")
+                print("checking if file is cataloged in md.inventory_directory()")
+                file_is_cataloged, header_map = mtd.is_file_cataloged(os.path.join(dirs,file), args)
+                rowObj, _header_map = mtd.is_file_cataloged(os.path.join(dirs,file), args)
                 loggr(file_is_cataloged)
-                if not rowObj.identifier:
-                    loggr("no identifier in catalog or filename, generating new uid")
-                    print("no identifier in catalog or filename, generating new uid")
-                    last_uid = mtd.get_last_uid(args)
-                    rowObj.identifier = str(int(last_uid) + 1)
-                    loggr("uid is " + rowObj.identifier)
-                    print("uid is " + rowObj.identifier)
-                loggr("sending updates to catalog in md.inventory_directory()")
-                print("sending updates to catalog in md.inventory_directory()")
-                update_catalog(rowObj, file_is_cataloged, header_map, args)
-            loggr("sleeping for 30s for API reset")
-            print("sleeping for 30s for API reset")
-            time.sleep(30)
+                pprint(file_is_cataloged)
+                if file_is_cataloged:
+                    if rowObj.data.filedata_complete == 'FALSE':
+                        loggr("filling rowObj from filedata in md.inventory_directory()")
+                        print("filling rowObj from filedata in md.inventory_directory()")
+                        rowObj = mfd.fill_rowObj_fromFile(os.path.join(dirs,file), rowObj, args)
+                        loggr("rowObj")
+                        loggr(rowObj)
+                    loggr("file is cataloged")
+                    print("file_is_cataloged")
+                    loggr(file_is_cataloged)
+                    if not rowObj.identifier:
+                        loggr("no identifier in catalog or filename, generating new uid")
+                        print("no identifier in catalog or filename, generating new uid")
+                        last_uid = mtd.get_last_uid(args)
+                        rowObj.identifier = str(int(last_uid) + 1)
+                        loggr("uid is " + rowObj.identifier)
+                        print("uid is " + rowObj.identifier)
+                    loggr("sending updates to catalog in md.inventory_directory()")
+                    print("sending updates to catalog in md.inventory_directory()")
+                    update_catalog(rowObj, file_is_cataloged, header_map, args)
+                loggr("sleeping for 30s for API reset")
+                print("sleeping for 30s for API reset")
+                time.sleep(60)
 
 def init():
     '''
@@ -231,12 +237,11 @@ def init():
     '''
     loggr("initializing variables")
     parser = argparse.ArgumentParser(description="makes the metadata ~flow~")
-    parser.add_argument('-start',dest='start', help="the start UID you want to hash")
     parser.add_argument('--moveDropboxToTraffic', dest='mdtt', action='store_true', help="moves file from Dropbox folder to traffic on NAS")
     parser.add_argument('--inventoryTraffic', dest="it", default=False, action='store_true', help="send file data from traffic to catalog")
     parser.add_argument('--inventoryOther', dest='io', default=False, help="the top-level path that you would like to inventory")
     parser.add_argument('--overwriteOK', dest='ook', action='store_true', default=False, help='allow re-upload of catalog data for existing entries')
-    parser.add_argument('--sheet', dest='sheet', choices=['to_process','catalog'],default='to_process', help="the sheet in the spreadsheet to work with")
+    parser.add_argument('--start', dest='start', help="the starting 5000XX number")
     args = parser.parse_args()
     return args
 
@@ -247,6 +252,7 @@ def main():
     loggr("move_data.py started at " + str(datetime.now()))
     print("move_data.py started at " + str(datetime.now()))
     args = init()
+    args.sheet = 'catalog'
     if platform == "linux" or platform == "linux2":
         args.Dropbox = "/root/Dropbox/MF archival audio"
         args.traffic = "/mnt/nas/traffic"
@@ -260,15 +266,7 @@ def main():
         try:
             moveDropboxToTraffic(args)
         except:
-            loggr("moveDropboxToTraffic didn't work :(")    
-    '''if args.mdtt is True:
-        moveDropboxToTraffic(args)
-        exit()
-    if args.start is True:
-        path = "/Volumes/My Passport/Micheal Feinstein Audio Files"
-        cleanpath = "/Volumes/NAS_Public/hdd_uploads/feinstein_2014-2017_clone/compounded-objects"
-        #cleaner(cleanpath, args)
-        make_and_send_hash(path, args)'''
+            loggr("moveDropboxToTraffic didn't work :(")
 
 if __name__ == '__main__':
     main()

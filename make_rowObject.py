@@ -85,7 +85,7 @@ def clean_header_row(header_row):
         if not header == "name" and not header == "role" and not header == "hashes match?" and not header == "showHide" and not header == "identifier":
             _header_row.append(header)
     loggr("header_row_cleaning complete in mro.clean_header_row()")
-    print("header_row_cleaning complete in mro.clean_header_row()")
+    pprint("header_row_cleaning complete in mro.clean_header_row()")
     return _header_row
 
 def clean_header_column_map(header_column_map, header_row):
@@ -99,6 +99,8 @@ def clean_header_column_map(header_column_map, header_row):
         header_map[header] = header_column_map[header]
     loggr("header_column_map cleaning completed in mro.clean_header_column_map()")
     print("header_column_map cleaning completed in mro.clean_header_column_map()")
+    #loggr(header_column_map)
+    #print(header_column_map)
     return header_map
 
 def init_rowObject(args):
@@ -120,7 +122,7 @@ def init_rowObject(args):
     loggr("cleaning header_column_map in mro.init_rowObj()")
     print("cleaning header_column_map in mro.init_rowObj()")
     header_map = clean_header_column_map(header_column_map, header_row)
-    loggr(header_column_map)
+    loggr(header_map)
     #convert list to dotdict
     loggr("initializing rowObj.data dotdict in mro.init_rowObject()")
     print("initializing rowObj.data dotdict in mro.init_rowObject()")
@@ -183,27 +185,6 @@ def fill_rowObject_fromCatalog(rowObj, header_map, args):
         rowObj.identifier = args.uid
         return rowObj
 
-def init():
-    '''
-    inits vars from CLI
-    '''
-    parser = argparse.ArgumentParser(description="makes a rowObject for integrating filedata and Google Sheets")
-    parser.add_argument('-sheet',choices=['catalog','to_process'],dest='sheet', help="the Google Sheet to use")
-    parser.add_argument('-identifier', dest='uid', default=False, help="the uid for the file, e.g. 50000123")
-    #parser.add_argument('--inventoryTraffic', dest="it", action='store_true', help="send file data from traffic to catalog")
-    args = parser.parse_args()
-    return args
-
-def main():
-    '''
-    do the thing
-    '''
-    args = init()
-    rowObj, header_map = init_rowObject(args)
-    pprint(header_map)
-    rowObj = fill_rowObject_fromCatalog(rowObj, header_map, args)
-    pprint(rowObj)
-
-
 if __name__ == "__main__":
-    main()
+    print("make_rowObject has no standalone functions")
+    print("perhaps you meant to run move_data.py?")

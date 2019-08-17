@@ -8,6 +8,7 @@ import unittest
 import time
 import getpass
 import psutil
+import pprint
 
 def makePID(pid):
 	'''
@@ -62,8 +63,9 @@ def log(message, **kwargs):
 	write(message, caller, fname)
 	if "print" in kwargs:
 		if kwargs['print'] is True:
-			print(message)
+			pprint(message)
 	###DONE###
 
 if __name__ == '__main__':
-    log("Hello World!", **{"level":"debug"})
+    print("logger has no standalone functions")
+    print("perhaps you meant to run move_data.py?")

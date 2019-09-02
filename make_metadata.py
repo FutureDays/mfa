@@ -223,7 +223,7 @@ def is_file_cataloged(fullpath, args):
     uids = args.worksheet.col_values(1) #get list of uids - whicha re always in column 1/A
     #uids = uids[1:]
     fname = os.path.basename(fullpath)
-    fpath = fullpath.replace(fname, "")
+    #fpath = fullpath.replace(fname, "")
     loggr("initialization complete in mtd.is_file_cataloged()")
     print("initialization complete in mtd.is_file_cataloged()")
     if fname in filenames:

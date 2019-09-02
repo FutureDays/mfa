@@ -15,6 +15,7 @@ import time
 import pprint
 import shutil
 import argparse
+import configparser
 from datetime import datetime
 import contextlib
 import google_handler as gh
@@ -47,6 +48,43 @@ class dotdict(dict):
     __getattr__ = dict.get
     __setattr__ = dict.__setitem__
     __delattr__ = dict.__delitem__
+
+def iterate_hash_column(column, index):
+    '''
+    uhhh makes looping through the hash column possible
+    '''
+    for hash in column[index:]:
+        if not hash:
+            row = column.index(hash) + 1
+            index = column.index(hash) + 500
+    return row, index
+
+
+def hasher(path, args):
+    '''
+    handler for hashing all the files
+    get column of hash values
+    get row number for each empty cell
+    get fullpath for file represented by row
+    send to process single file
+    '''
+    header_row, header_column_map = make_rowObject.get_header(args)
+    pprint(header_column_map)
+    if "nas" in args.hasher or "NAS" in args.hasher:
+        column = header_column_map['SHA1hash-onRAID']
+    else:
+        column = header_column_map['SHA1hash-ondrive']
+    print(column)
+    column = gh.get_column_values(column, args.worksheet)
+    index = 0
+    while index < len(column):
+        pprint(len(column[index:]))
+        row, index = iterate_hash_column(column, index)
+        print(row)
+        print(index)
+        input("heya")
+
+
 
 def cleaner(path, args):
     '''
@@ -176,6 +214,42 @@ def update_catalog(rowObj, catalog_rowObj, header_map, args):
                 print("updating cell " + cell + " with value " + value)
                 gh.update_cell_value(cell, value, args.worksheet)
 
+def process_single_file(fullpath, args):
+    '''
+    runs a single file through the process
+    '''
+    loggr("processing file " + os.path.basename(fullpath))
+    print("processing file " + os.path.basename(fullpath))
+    loggr("retrieving worksheet " + args.sheet + " in md.inventory_directory()")
+    print("retrieving worksheet " + args.sheet + " in md.inventory_directory()")
+    args = gh.get_worksheet(args)
+    loggr("checking if file is cataloged in md.inventory_directory()")
+    print("checking if file is cataloged in md.inventory_directory()")
+    file_is_cataloged, header_map = mtd.is_file_cataloged(fullpath, args)
+    rowObj, _header_map = mtd.is_file_cataloged(fullpath, args)
+    loggr(file_is_cataloged)
+    pprint(file_is_cataloged)
+    if file_is_cataloged:
+        if rowObj.data.filedata_complete == 'FALSE':
+            loggr("filling rowObj from filedata in md.inventory_directory()")
+            print("filling rowObj from filedata in md.inventory_directory()")
+            rowObj = mfd.fill_rowObj_fromFile(fullpath, rowObj, args)
+            loggr("rowObj")
+            loggr(rowObj)
+        loggr("file is cataloged")
+        print("file_is_cataloged")
+        loggr(file_is_cataloged)
+        if not rowObj.identifier:
+            loggr("no identifier in catalog or filename, generating new uid")
+            print("no identifier in catalog or filename, generating new uid")
+            last_uid = mtd.get_last_uid(args)
+            rowObj.identifier = str(int(last_uid) + 1)
+            loggr("uid is " + rowObj.identifier)
+            print("uid is " + rowObj.identifier)
+        loggr("sending updates to catalog in md.inventory_directory()")
+        print("sending updates to catalog in md.inventory_directory()")
+        update_catalog(rowObj, file_is_cataloged, header_map, args)
+
 def inventory_directory(args):
     '''
     send file data to catalog
@@ -194,42 +268,18 @@ def inventory_directory(args):
         for file in files:
             if not file.endswith(".zip") and not file.startswith(".") and not file.endswith(".xml"):
                 if args.start:
-                    if int(args.start) < int(file[:14]):
-                        continue        
-                loggr("processing file " + file)
-                print("processing file " + file)
-                loggr("retrieving worksheet " + args.sheet + " in md.inventory_directory()")
-                print("retrieving worksheet " + args.sheet + " in md.inventory_directory()")
-                args = gh.get_worksheet(args)
-                loggr("checking if file is cataloged in md.inventory_directory()")
-                print("checking if file is cataloged in md.inventory_directory()")
-                file_is_cataloged, header_map = mtd.is_file_cataloged(os.path.join(dirs,file), args)
-                rowObj, _header_map = mtd.is_file_cataloged(os.path.join(dirs,file), args)
-                loggr(file_is_cataloged)
-                pprint(file_is_cataloged)
-                if file_is_cataloged:
-                    if rowObj.data.filedata_complete == 'FALSE':
-                        loggr("filling rowObj from filedata in md.inventory_directory()")
-                        print("filling rowObj from filedata in md.inventory_directory()")
-                        rowObj = mfd.fill_rowObj_fromFile(os.path.join(dirs,file), rowObj, args)
-                        loggr("rowObj")
-                        loggr(rowObj)
-                    loggr("file is cataloged")
-                    print("file_is_cataloged")
-                    loggr(file_is_cataloged)
-                    if not rowObj.identifier:
-                        loggr("no identifier in catalog or filename, generating new uid")
-                        print("no identifier in catalog or filename, generating new uid")
-                        last_uid = mtd.get_last_uid(args)
-                        rowObj.identifier = str(int(last_uid) + 1)
-                        loggr("uid is " + rowObj.identifier)
-                        print("uid is " + rowObj.identifier)
-                    loggr("sending updates to catalog in md.inventory_directory()")
-                    print("sending updates to catalog in md.inventory_directory()")
-                    update_catalog(rowObj, file_is_cataloged, header_map, args)
-                loggr("sleeping for 30s for API reset")
-                print("sleeping for 30s for API reset")
-                time.sleep(60)
+                    if int(args.start) <= int(file[:14]):
+                        process_single_file(os.path.join(dirs,file), args)
+                        loggr("sleeping for 60s for API reset")
+                        print("sleeping for 60s for API reset")
+                        time.sleep(60)
+                    else:
+                        continue
+                else:
+                    process_single_file(os.path.join(dirs,file), args)
+                    loggr("sleeping for 60s for API reset")
+                    print("sleeping for 60s for API reset")
+                    time.sleep(60)
 
 def init():
     '''
@@ -242,6 +292,7 @@ def init():
     parser.add_argument('--inventoryOther', dest='io', default=False, help="the top-level path that you would like to inventory")
     parser.add_argument('--overwriteOK', dest='ook', action='store_true', default=False, help='allow re-upload of catalog data for existing entries')
     parser.add_argument('--start', dest='start', help="the starting 5000XX number")
+    parser.add_argument('--hasher', dest="hasher", help="hash all the files in a directory")
     args = parser.parse_args()
     return args
 
@@ -260,6 +311,9 @@ def main():
         args.Dropbox = "/root/Dropbox/MF archival audio"
         args.traffic = "/Volumes/NAS_Public/traffic"
     loggr(args)
+    if args.hasher:
+        args = gh.get_worksheet(args)
+        hasher(args.hasher, args)
     if args.it or args.io:
         inventory_directory(args)
     if args.mdtt:

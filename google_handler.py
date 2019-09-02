@@ -48,6 +48,14 @@ def get_row_values(worksheet):
     vals = worksheet.row_values(1)
     return vals
 
+def get_column_values(columnLetter, worksheet):
+    '''
+    returns list of column values
+    '''
+    col = ord(columnLetter) - 64
+    vals = worksheet.col_values(col)
+    return vals
+
 def update_cell_value(cell, value, worksheet):
     '''
     updates the value of a cell

@@ -56,6 +56,13 @@ def get_column_values(columnLetter, worksheet):
     vals = worksheet.col_values(col)
     return vals
 
+def get_cell_value(cell, worksheet):
+    '''
+    returns value of a cell
+    '''
+    cell_value = worksheet.acell(cell).value
+    return cell_value
+
 def update_cell_value(cell, value, worksheet):
     '''
     updates the value of a cell

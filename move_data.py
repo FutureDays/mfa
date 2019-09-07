@@ -53,10 +53,10 @@ def iterate_hash_column(column, index):
     '''
     uhhh makes looping through the hash column possible
     '''
-    for hash in column[index:]:
+    for hash in column:
         if not hash:
             row = column.index(hash) + 1
-            index = column.index(hash) + 500
+            index = column.index(hash)
     return row, index
 
 
@@ -71,18 +71,26 @@ def hasher(path, args):
     header_row, header_column_map = make_rowObject.get_header(args)
     pprint(header_column_map)
     if "nas" in args.hasher or "NAS" in args.hasher:
-        column = header_column_map['SHA1hash-onRAID']
+        columnLetter = header_column_map['SHA1hash-onRAID']
     else:
-        column = header_column_map['SHA1hash-ondrive']
-    print(column)
-    column = gh.get_column_values(column, args.worksheet)
+        columnLetter = header_column_map['SHA1hash-ondrive']
+    print(columnLetter)
+    column = gh.get_column_values(columnLetter, args.worksheet)
     index = 0
     while index < len(column):
         pprint(len(column[index:]))
         row, index = iterate_hash_column(column, index)
         print(row)
         print(index)
-        input("heya")
+        cell = columnLetter + str(row)
+        filename = gh.get_cell_value(header_column_map['filename'] + str(row), args.worksheet)
+        print(filename)
+        value = mfd.hash_file(os.path.join(path, filename))
+        if not value:
+            value = False
+        gh.update_cell_value(cell, value, args.worksheet)
+        time.sleep(3)
+        column = gh.get_column_values(columnLetter, args.worksheet)
 
 
 

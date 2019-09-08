@@ -78,7 +78,7 @@ def hasher(path, args):
     column = gh.get_column_values(columnLetter, args.worksheet)
     index = 0
     while index < len(column):
-        pprint(len(column[index:]))
+        gc = gh.authorize()
         row, index = iterate_hash_column(column, index)
         print(row)
         print(index)
@@ -89,7 +89,7 @@ def hasher(path, args):
         if not value:
             value = False
         gh.update_cell_value(cell, value, args.worksheet)
-        time.sleep(3)
+        time.sleep(10)
         column = gh.get_column_values(columnLetter, args.worksheet)
 
 

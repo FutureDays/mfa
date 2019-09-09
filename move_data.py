@@ -49,13 +49,13 @@ class dotdict(dict):
     __setattr__ = dict.__setitem__
     __delattr__ = dict.__delitem__
 
-def iterate_hash_column(column, index):
+def iterate_hash_column(column, rownumber, index):
     '''
     uhhh makes looping through the hash column possible
     '''
-    for hash in column:
+    for hash in column[rownumber:]:
         if not hash:
-            row = column.index(hash) + 1
+            row = column[rownumber:].index(hash) + 1 + rownumber
             index = column.index(hash)
     return row, index
 
@@ -76,10 +76,11 @@ def hasher(path, args):
         columnLetter = header_column_map['SHA1hash-ondrive']
     print(columnLetter)
     column = gh.get_column_values(columnLetter, args.worksheet)
+    #column = _column[args.start:]
     index = 0
     while index < len(column):
         gc = gh.authorize()
-        row, index = iterate_hash_column(column, index)
+        row, index = iterate_hash_column(column, args.start, index)
         print(row)
         print(index)
         cell = columnLetter + str(row)
@@ -299,7 +300,7 @@ def init():
     parser.add_argument('--inventoryTraffic', dest="it", default=False, action='store_true', help="send file data from traffic to catalog")
     parser.add_argument('--inventoryOther', dest='io', default=False, help="the top-level path that you would like to inventory")
     parser.add_argument('--overwriteOK', dest='ook', action='store_true', default=False, help='allow re-upload of catalog data for existing entries')
-    parser.add_argument('--start', dest='start', help="the starting 5000XX number")
+    parser.add_argument('--start', dest='start', type=int, default=0, help="the starting row number number")
     parser.add_argument('--hasher', dest="hasher", help="hash all the files in a directory")
     args = parser.parse_args()
     return args

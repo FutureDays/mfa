@@ -74,7 +74,10 @@ def hash_file(filepath):
     '''
     loggr('attempting to hash file ' + filepath)
     print('attempting to hash file ' + filepath)
-    output = subprocess.check_output("shasum '" + filepath + "'", shell=True)
+    try:
+        output = subprocess.check_output("shasum '" + filepath + "'", shell=True)
+    except subprocess.CalledProcessError as e:
+        return False
     match = ''
     #search for 40 consecutive word characters in string, convert byte output from shasum in CLI to utf-8 string
     match = re.search(r'\w{40}', output.decode("utf-8"))

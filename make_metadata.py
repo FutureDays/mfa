@@ -217,7 +217,7 @@ def is_file_cataloged(fullpath, args):
     indx = ord(header_map['filename']) - 64 #get column number of filename
     filenames = args.worksheet.col_values(indx) #get list of filenames from spreadsheet column
     #filenames = filenames[1:] #remove header row from list of filename
-    indx = ord(header_map['dir']) - 64 #get column number of dir
+    indx = ord(header_map['RAID-dir']) - 64 #get column number of dir
     dirs = args.worksheet.col_values(indx) #get list of directories from spreadsheet column
     dirs = dirs[1:] #remove header row from list of dirs
     uids = args.worksheet.col_values(1) #get list of uids - whicha re always in column 1/A

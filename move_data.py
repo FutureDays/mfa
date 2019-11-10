@@ -88,8 +88,7 @@ def hasher(path, args):
         if _filepath.startswith("/") or _filepath.startswith(r"\\"):
             _filepath = _filepath[1:]
         filepath = os.path.join(args.nas, _filepath)
-        print(args.nas)
-        print(type(_filepath))
+        print(filepath)
         print(path)
         if filepath == path:
             cell = columnLetter + str(row)

@@ -83,15 +83,29 @@ def hasher(path, args):
         row, index = iterate_hash_column(column, args.start, index)
         print(row)
         print(index)
-        cell = columnLetter + str(row)
-        filename = gh.get_cell_value(header_column_map['filename'] + str(row), args.worksheet)
-        print(filename)
-        value = mfd.hash_file(os.path.join(path, filename))
-        if not value:
-            value = False
-        gh.update_cell_value(cell, value, args.worksheet)
-        time.sleep(10)
-        column = gh.get_column_values(columnLetter, args.worksheet)
+        #verify that file which needs hash is in directory we're hashing
+        _filepath = gh.get_cell_value(header_column_map['RAID-dir'] + str(row), args.worksheet)
+        if _filepath.startswith("/") or _filepath.startswith(r"\\"):
+            _filepath = _filepath[1:]
+        filepath = os.path.join(args.nas, _filepath)
+        print(args.nas)
+        print(type(_filepath))
+        print(path)
+        if filepath == path:
+            cell = columnLetter + str(row)
+            filename = gh.get_cell_value(header_column_map['filename'] + str(row), args.worksheet)
+            print(filename)
+            value = mfd.hash_file(os.path.join(path, filename))
+            if not value:
+                value = False
+            gh.update_cell_value(cell, value, args.worksheet)
+            time.sleep(30)
+            column = gh.get_column_values(columnLetter, args.worksheet)
+        else:
+            print("hasher has completed hashing direcory")
+            print("next file that needs hash in catalog is:")
+            print(row)
+            return
 
 
 
@@ -316,9 +330,11 @@ def main():
     if platform == "linux" or platform == "linux2":
         args.Dropbox = "/root/Dropbox/MF archival audio"
         args.traffic = "/mnt/nas/traffic"
+        args.nas = "/mnt/nas"
     elif platform == "darwin":
         args.Dropbox = "/root/Dropbox/MF archival audio"
         args.traffic = "/Volumes/NAS_Public/traffic"
+        args.nas = "/Volumes/NAS_Public"
     loggr(args)
     if args.hasher:
         args = gh.get_worksheet(args)

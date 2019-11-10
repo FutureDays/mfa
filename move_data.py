@@ -89,7 +89,6 @@ def hasher(path, args):
         if _filepath.startswith("/") or _filepath.startswith(r"\\"):
             _filepath = _filepath[1:]
         filepath = os.path.join(args.nas, _filepath)
-        filepath = fileapth.encode("utf")
         for f in filepath:
             print(f)
             indx = filepath.index(f)

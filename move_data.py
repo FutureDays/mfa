@@ -15,6 +15,7 @@ import time
 import pprint
 import shutil
 import argparse
+import hashlib
 import configparser
 from datetime import datetime
 import contextlib
@@ -88,8 +89,8 @@ def hasher(path, args):
         if _filepath.startswith("/") or _filepath.startswith(r"\\"):
             _filepath = _filepath[1:]
         filepath = os.path.join(args.nas, _filepath)
-        print(filepath)
-        print(path)
+        print(int(hashlib.sha1(filepath).hexdigest(), 16) % (10 ** 8))
+        print(int(hashlib.sha1(path).hexdigest(), 16) % (10 ** 8))
         if filepath == path:
             cell = columnLetter + str(row)
             filename = gh.get_cell_value(header_column_map['filename'] + str(row), args.worksheet)

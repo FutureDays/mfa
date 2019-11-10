@@ -93,6 +93,8 @@ def hasher(path, args):
             print(f)
             indx = filepath.index(f)
             if not f == path[indx]:
+                print(filepath)
+                print(path)
                 print(f)
                 print(path[indx])
                 print(ord(f))

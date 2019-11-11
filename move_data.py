@@ -108,7 +108,7 @@ def hasher(path, args):
             cell = columnLetter + str(row)
             filename = gh.get_cell_value(header_column_map['filename'] + str(row), args.worksheet)
             print(filename)
-            value = mfd.hash_file(os.path.join(path, filename))
+            value = mfd.hash_file(os.path.join(filepath, filename))
             if not value:
                 value = False
             gh.update_cell_value(cell, value, args.worksheet)

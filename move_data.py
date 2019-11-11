@@ -100,8 +100,10 @@ def hasher(path, args):
                 print(ord(f))
                 print(ord(path[indx]))
                 input("this letter doesn't match?")'''
-        print(int(hashlib.sha1(filepath.encode("utf-8")).hexdigest(), 16) % (10 ** 8))
-        print(int(hashlib.sha1(path.encode("utf-8")).hexdigest(), 16) % (10 ** 8))
+        #print(int(hashlib.sha1(filepath.encode("utf-8")).hexdigest(), 16) % (10 ** 8))
+        #print(int(hashlib.sha1(path.encode("utf-8")).hexdigest(), 16) % (10 ** 8))
+        print(filepath)
+        print(path)
         if filepath == path:
             cell = columnLetter + str(row)
             filename = gh.get_cell_value(header_column_map['filename'] + str(row), args.worksheet)

@@ -104,7 +104,7 @@ def hasher(path, args):
         #print(int(hashlib.sha1(path.encode("utf-8")).hexdigest(), 16) % (10 ** 8))
         print(filepath)
         print(path)
-        if filepath == path:
+        if filepath == path or path in filepath:
             cell = columnLetter + str(row)
             filename = gh.get_cell_value(header_column_map['filename'] + str(row), args.worksheet)
             print(filename)

@@ -89,7 +89,7 @@ def hasher(path, args):
         if _filepath.startswith("/") or _filepath.startswith(r"\\"):
             _filepath = _filepath[1:]
         filepath = os.path.join(args.nas, _filepath)
-        for f in filepath:
+        '''for f in filepath:
             print(f)
             indx = filepath.index(f)
             if not f == path[indx]:
@@ -99,7 +99,7 @@ def hasher(path, args):
                 print(path[indx])
                 print(ord(f))
                 print(ord(path[indx]))
-                input("this letter doesn't match?")
+                input("this letter doesn't match?")'''
         print(int(hashlib.sha1(filepath.encode("utf-8")).hexdigest(), 16) % (10 ** 8))
         print(int(hashlib.sha1(path.encode("utf-8")).hexdigest(), 16) % (10 ** 8))
         if filepath == path:
